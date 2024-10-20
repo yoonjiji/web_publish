@@ -63,11 +63,19 @@
 
 /* content3 - 패키지/영화관람권/기프트카드 */
 .c3_ptg {
+  display: flex;
+  width: 1200px;
+  text-align: center;
+}
+.c3_ptg > div {
+  width: 33.3333%;
+  border: 1px solid #dadada;
+  border-radius: 20px;
+}
+.c3_ptg img {
+  width: 200px;
 }
 .c3_package {
-}
-.c3_package img {
-  width: 200px;
 }
 .c3_ticket {
 }
@@ -76,4 +84,28 @@
 
 /* content3 - 공지사항 */
 .c3_notice {
+  display: flex;
+  width: 100%;
+}
+
+.c3_notice_innner {
+  display: flex;
+  width: 80%;
+}
+
+.c3_notice_innner > div {
+  width: 50%;
+  border: 1px solid #dadada;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.c3_n_1 > div:first-child {
+  border-bottom: 1px solid #dadada;
+  padding-bottom: 20px;
+}
+
+.c3_n_2 {
+}
+.c3_n_3 {
 }
