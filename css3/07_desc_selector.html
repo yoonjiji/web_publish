@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desc Selector</title>
+    <style>
+      /* 자손 선택자 */
+      body label {
+        color: yellowgreen;
+      }
+      .first label {
+        color: blueviolet;
+      }
+
+      /* 자식 선택자 */
+      ul.first > li > label {
+        color: darkorange;
+      }
+      ul.first > li:nth-child(2) > ul > li {
+        color: #41f631;
+      }
+
+      /* 인접형제 선택자 */
+      ul.first + ul {
+        background-color: yellow;
+      }
+      /* 일반형제 선택자 */
+      ul.first ~ ul {
+        background-color: rgb(31, 139, 87);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Desc(자손) Selector</h1>
+    <ul class="first">
+      <li>
+        <label for="">Front-end</label>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+        </ul>
+      </li>
+      <li>
+        <label for="">Back-end</label>
+        <ul>
+          <li>Node.js</li>
+          <li>JSP</li>
+          <li>ASP</li>
+        </ul>
+      </li>
+      <li>
+        <label for="">Database</label>
+        <ul>
+          <li>MySQL</li>
+          <li>Oracle</li>
+          <li>Maria</li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- <hr /> -->
+    <ul>
+      <li>
+        <label for="">Selector list</label>
+        <ul>
+          <li>HTML Tag</li>
+          <li>Id</li>
+          <li>Class</li>
+          <li>Descendant</li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>

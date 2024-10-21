@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CGV</title>
+    <title>CGV Login</title>
 
     <!-- style -->
     <link rel="stylesheet" href="/cgv2/css/reset.css" />
@@ -20,7 +20,41 @@
       ></iframe>
       <!-- /header -->
 
-      <div id="contents"></div>
+      <div id="contents">
+        <div class="login-form">
+          <h1>Login Form</h1>
+          <form action="#" method="post">
+            <ul>
+              <li>
+                <label for="">아이디 또는 이메일</label>
+                <input type="text" name="id" placeholder="입력해주세요" />
+              </li>
+
+              <li>
+                <label for="">비밀번호</label>
+                <input
+                  type="text"
+                  name="fwd"
+                  placeholder="비밀번호를 입력해주세요"
+                />
+              </li>
+
+              <li>
+                <input type="checkbox" />
+                <label for="">로그인 상태 유지</label>
+              </li>
+
+              <li>
+                <button>로그인</button>
+                <button>회원가입</button>
+              </li>
+
+              <li><a href="#">비밀번호 찾기</a></li>
+            </ul>
+          </form>
+        </div>
+        <!-- /login-form -->
+      </div>
       <!-- /contents -->
 
       <iframe
