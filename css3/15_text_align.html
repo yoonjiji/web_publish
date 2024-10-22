@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Align</title>
+    <style>
+      p {
+        border: 1px solid tomato;
+      }
+
+      /* text-align */
+      .left {
+        text-align: left;
+      }
+      .right {
+        text-align: right;
+      }
+      .center {
+        text-align: center;
+      }
+      .justify {
+        text-align: justify;
+      }
+
+      /* display */
+      .block {
+        display: block;
+      }
+      .inline {
+        display: inline;
+      }
+      .inlineblock {
+        display: inline-block;
+      }
+
+      div > p {
+        width: 50px;
+        height: 50px;
+      }
+      div {
+        border: 2px solid red;
+        text-align: center;
+      }
+      .red {
+        background-color: red;
+      }
+      .blue {
+        background-color: blue;
+      }
+      .green {
+        background-color: green;
+      }
+      img {
+        width: 10%;
+      }
+
+      h1 {
+        /* letter-spacing: 10px; */
+        word-spacing: 20px;
+      }
+      .lineheight {
+        line-height: 1.4;
+      }
+
+      h2 {
+        border: 1px solid blue;
+        margin-left: 200px;
+      }
+      .indent1 {
+        text-indent: 30px;
+      }
+      .indent2 {
+        text-indent: -30px;
+      }
+
+      .upper {
+        text-transform: uppercase;
+      }
+      .low {
+        text-transform: lowercase;
+      }
+      .capital {
+        text-transform: capitalize;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Text align</h1>
+    <h2 class="indent1 upper">Text indent</h2>
+    <h2 class="indent2 low">Text indent2</h2>
+    <h2 class="capital">Text capital</h2>
+    <p class="left inline">text-align:left</p>
+    <p class="right">text-align:right</p>
+    <p class="center">text-align:center</p>
+    <p class="justify">text-align:justify</p>
+    <p class="justify lineheight">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate
+      reprehenderit, rem voluptates facere voluptatibus inventore sed quo totam
+      provident est, atque rerum, amet cumque neque commodi. Magnam repellendus
+      possimus repellat.
+    </p>
+    <div>
+      <!-- <p class="red inline">left</p>
+      <p class="green inline">right</p>
+      <p class="blue inline">center</p> -->
+      <img src="/html/images/logoRed.png" alt="cgv logo" />
+      <img src="/html/images/logoRed.png" alt="cgv logo" />
+      <img src="/html/images/logoRed.png" alt="cgv logo" />
+    </div>
+  </body>
+</html>

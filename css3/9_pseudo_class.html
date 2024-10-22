@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Class Selector</title>
+    <style>
+      h1::before {
+        content: "-";
+        color: darkorange;
+      }
+      h1::after {
+        content: "*";
+        color: darkorange;
+      }
+      h1:hover {
+        background-color: yellowgreen;
+        color: #fff;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+      a:visited {
+        color: tomato;
+      }
+      input:active {
+        color: blue;
+      }
+      input:focus {
+        background-color: yellow;
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pseudo Class Selector</h1>
+    <p>
+      <a href="http://www.naver.com">Naver</a>
+      <a href="http://www.google.com">Google</a>
+    </p>
+    <div>
+      <input type="text" />
+      <button>search</button>
+    </div>
+  </body>
+</html>
