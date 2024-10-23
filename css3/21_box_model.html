@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box model</title>
+    <style>
+      div {
+        border: 1px solid salmon;
+      }
+      div.padding > h3 {
+        border: 1px solid blue;
+        margin: 0;
+      }
+      .padding {
+        /* padding: 20px; 전부 20px씩 패딩 */
+        padding: 0 15px 20px; /* top, bottom 10px / right, left 15px */
+        /* padding-right: 10px; */
+        /* padding-bottom: 30px; */
+        /* padding-left: 50px; */
+      }
+      .margin {
+        /* margin-top: 20px;
+        margin-right: 10px;
+        margin-bottom: 40px;
+        margin-left: 30px; */
+        margin: 20px 10px 40px 30px;
+      }
+      .border {
+        border: 3px dotted green;
+        /* border-top: 10px groove orange;
+        border-right: 10px double red;
+        border-bottom: 5px solid pink;
+        border-left: 10px solid darkgoldenrod; */
+        border-bottom: none;
+      }
+      .box-sizing {
+        box-sizing: border-box;
+        padding: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Box model: content, padding, border, margin</h1>
+    <div class="padding">
+      <h3>padding</h3>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto labore
+      similique dolores blanditiis doloremque, cumque perferendis ut aspernatur
+      laudantium, laboriosam modi sed obcaecati quos fugit ratione nemo
+      cupiditate voluptatem quisquam?
+    </div>
+    <div class="margin">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto labore
+      similique dolores blanditiis doloremque, cumque perferendis ut aspernatur
+      laudantium, laboriosam modi sed obcaecati quos fugit ratione nemo
+      cupiditate voluptatem quisquam?
+    </div>
+    <div class="border padding margin">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto labore
+      similique dolores blanditiis doloremque, cumque perferendis ut aspernatur
+      laudantium, laboriosam modi sed obcaecati quos fugit ratione nemo
+      cupiditate voluptatem quisquam?
+    </div>
+    <div class="border box-sizing">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto labore
+      similique dolores blanditiis doloremque, cumque perferendis ut aspernatur
+      laudantium, laboriosam modi sed obcaecati quos fugit ratione nemo
+      cupiditate voluptatem quisquam?
+    </div>
+  </body>
+</html>

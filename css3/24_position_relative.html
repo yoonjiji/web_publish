@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position relative</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      h1 {
+        width: 300px;
+        border: 10px solid red;
+      }
+      div {
+        width: 500px;
+        border: 1px solid silver;
+      }
+      .relative {
+        position: relative;
+        top: 10px;
+        left: 50px;
+      }
+      .absolute {
+        position: absolute;
+        top: 20px;
+        right: 0;
+      }
+      div > span {
+        letter-spacing: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="absolute">Position relative</h1>
+    <!-- <div class="relative">
+      <img src="/html/images/logoRed.png" alt="cgv logo" />
+      <span class="absolute">DEEP DIVE SPACE</span>
+    </div> -->
+  </body>
+</html>
