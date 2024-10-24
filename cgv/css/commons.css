@@ -12,7 +12,7 @@ li {
 }
 a {
   text-decoration: none;
-  color: #333;
+  color: var(--color-primary);
 }
 
 /* 공통된 부분은 :root로 묶는다 */

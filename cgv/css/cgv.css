@@ -116,4 +116,6 @@ footer {
   padding-top: 20px;
 }
 
-/* p 맨아래 padding-bottom 주기 */
+footer p:last-child {
+  padding-bottom: 20px;
+}
