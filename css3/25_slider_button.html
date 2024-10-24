@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider button</title>
+    <style>
+      .sliderwrapper {
+        width: 600px;
+        height: 400px;
+        margin: 0 auto;
+        background-color: sandybrown;
+        position: relative;
+      }
+      .btn {
+        padding: 0 20px;
+        line-height: 30px;
+        color: #fff;
+        background-color: #000;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .btn_pre {
+        left: -30px;
+      }
+      .btn_next {
+        right: -30px;
+      }
+      img {
+        width: 600px;
+        height: 400px;
+      }
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>sliderwrapper</h1>
+    <div class="sliderwrapper">
+      <img
+        src="https://img.cgv.co.kr/Movie/Thumbnail/StillCut/000088/88526/88526230448_727.jpg"
+        alt="cgv logo"
+      />
+      <button class="btn btn_pre">prev</button>
+      <button class="btn btn_next">next</button>
+    </div>
+  </body>
+</html>
