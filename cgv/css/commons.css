@@ -24,4 +24,42 @@ a {
   --color-border: tomato;
   --color-silver: #d1d1d1;
   --color-footer-bg: rgb(248, 248, 248);
+  --color-moviechart: rgb(251, 251, 251);
+  --color-gray-222: rgb(102, 102, 127);
+  --color-font-frimary: rgb(34, 34, 34);
+}
+
+/* index-preview-button style */
+.total-view-button {
+  border: 1px solid var(--color-primary);
+  padding: 7px 15px;
+  border-radius: 20px;
+}
+
+/* moviechart, event, special => title style */
+.content-title-tyle {
+  display: flex;
+  justify-content: space-between;
+}
+.content-title-sub-style {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-title-tyle-font {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: var(--color-primary);
+}
+.content-title-sub-tyle-font {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+.font-color-main {
+  color: var(--color-font-frimary);
+}
+.font-color-gray {
+  color: var(--color-gray-222);
 }
