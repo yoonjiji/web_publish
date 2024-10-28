@@ -186,14 +186,14 @@
         <!-- 이벤트 및 특별관 등 -->
         <div class="content-event-special">
           <!-- 이벤트 -->
-          <div class="content-event">
+          <div class="content-padding">
             <div class="content-title-tyle">
               <h2 class="content-title-tyle-font">EVENT</h2>
               <button class="total-view-button">전체보기 &gt;</button>
             </div>
 
-            <div class="content-event-list">
-              <ul>
+            <div>
+              <ul class="content-event-list">
                 <li>
                   <a href="#">
                     <div>
@@ -228,25 +228,25 @@
           </div>
 
           <!-- 특별관 -->
-          <div class="content-special">
+          <div class="content-padding">
             <div class="content-title-tyle">
               <h2 class="content-title-tyle-font">특별관</h2>
               <button class="total-view-button">전체보기 &gt;</button>
             </div>
 
-            <div>
+            <div class="content-special">
               <div>
                 <a href="#"
-                  ><img src="/cgv/images/special1.png" alt="이벤트 광고"
+                  ><img src="/cgv2/images/special1.png" alt="이벤트 광고"
                 /></a>
               </div>
 
-              <div class="content-special-list">
-                <ul>
+              <div>
+                <ul class="content-special-list">
                   <li>
                     <a href="#">
                       <span>SUITE CENEMA</span>
-                      <span class="content-special-list-tag"
+                      <span 
                         >#호텔 컨셉의 프리미엄관</span
                       >
                     </a>
@@ -254,7 +254,7 @@
                   <li>
                     <a href="#">
                       <span>CINE & LIVINGROOM</span>
-                      <span class="content-special-list-tag"
+                      <span
                         >#신개념 소셜 상영관</span
                       >
                     </a>
@@ -262,10 +262,7 @@
                   <li>
                     <a href="#">
                       <span>4DX</span>
-                      <span class="content-special-list-tag">
-                        <span>#모션시트</span>
-                        <span>#오감체험</span>
-                      </span>
+                      <span>#모션시트 #오감체험</span>
                     </a>
                   </li>
                   <li>
@@ -283,12 +280,12 @@
           </div>
 
           <!-- package / ticket / gift -->
-          <div class="content-pac-tik-gft">
+          <div class="content-package content-padding">
             <!-- 패키지 -->
-            <div>
+            <div class="content-border">
               <div class="content-title-tyle">
                 <span class="content-title-sub-tyle-font">패키지</span>
-                <button class="total-view-button">더보기</button>
+                <button class="package-content-button">더보기</button>
               </div>
 
               <ul>
@@ -331,10 +328,10 @@
             </div>
 
             <!-- 영화관람권 -->
-            <div>
+            <div class="content-border">
               <div class="content-title-tyle">
                 <h2 class="content-title-sub-tyle-font">영화관람권</h2>
-                <button class="total-view-button">더보기</button>
+                <button class="package-content-button">더보기</button>
               </div>
 
               <ul>
@@ -377,10 +374,10 @@
             </div>
 
             <!-- 기프트카드 -->
-            <div>
+            <div class="content-border">
               <div class="content-title-tyle">
                 <h2 class="content-title-sub-tyle-font">기프트카드</h2>
-                <button class="total-view-button">더보기</button>
+                <button class="package-content-button">더보기</button>
               </div>
 
               <ul>
@@ -433,42 +430,47 @@
           </div>
 
           <!-- 공지사항 -->
-          <div class="content-notice">
+          <div>
             <!-- 공지사항 -->
-            <div>
-              <div>
+            <div class="content-notice">
+              <!-- 공지사항 ~ 앱다운로드까지 -->
+              <div class="content-notice-down">
+              <!-- 공지 / 고객센터 / 문의 -->
+                <div class="content-notice-noti">
+                  <!-- 공지사항 / 고객센터 -->
+                  <div>
+                    <div>
+                      <span class="notice-content-font">공지사항</span>
+                      <span class="notice-span-padding">[시스템 점검]iOS 18 업데이트 관련 예매 서비스...</span>
+                      <button class="package-content-button">더보기</button>
+                    </div>
+
+                    <div>
+                      <h2 class="notice-content-font">고객센터</h2>
+                      <p>
+                        <span>1544-1122</span> <br />
+                        <span>고객센터 운영시간(평일 09:00~18:00)</span><br />
+                        <span>업무시간 외 자동응답 안내 가능합니다.</span>
+                      </p>
+                    </div>
+                  </div>
+
                 <div>
-                  <div>
-                    <span class="content-title-sub-tyle-font">공지사항</span>
-                    <span>iOS 18 업데이트 관련 예매 서비스...</span>
-                    <button class="total-view-button">더보기</button>
-                  </div>
+                  <span>FAQ</span>
+                  <span>1:1 문의</span>
+                  <span>대관/단체 문의</span>
+                </div>
+                </div>
 
-                  <div>
-                    <h2 class="content-title-sub-tyle-font">고객센터</h2>
-                    <p>
-                      1544-1122 <br />
-                      고객센터 운영시간(평일 09:00~18:00)<br />
-                      업무시간 외 자동응답 안내 가능합니다.
-                    </p>
-                  </div>
+                <!-- 앱 다운로드 -->
+                <div>
+                  <h2 class="notice-content-font">앱 다운로드</h2>
+                  <p>CGV앱에서 더 편리하게 이용하세요</p>
+                  <img src="/cgv/images/qrcode.gif" alt="QR code" />
+                  <p>QR코드를 스캔하고<br />앱설치 페이지로 바로 이동하세요</p>
+                </div>
               </div>
-
-              <div>
-                <button>FAQ</button>
-                <button>1:1 문의</button>
-                <button>대관/단체 문의</button>
-              </div>
-            </div>
-
-            <!-- 앱 다운로드 -->
-            <div>
-              <h2 class="content-title-sub-tyle-font">앱 다운로드</h2>
-              <p>CGV앱에서 더 편리하게 이용하세요</p>
-              <img src="/cgv/images/qrcode.gif" alt="QR code" />
-              <p>QR코드를 스캔하고<br />앱설치 페이지로 바로 이동하세요</p>
-            </div>
-
+            
             <!-- 홈헬스 광고 -->
             <div>
               <a href="#"
@@ -476,9 +478,7 @@
               /></a>
             </div>
           </div>
-          <!-- /c3_notice -->
         </div>
-        <!-- /content-event-special -->
       </div>
       <!-- /contents -->
 

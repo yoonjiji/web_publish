@@ -32,6 +32,11 @@ a {
   --color-login-font: rgb(137, 137, 135);
 }
 
+/* 콘텐츠 패딩 */
+.content-padding {
+  padding: 40px 0;
+}
+
 /* 컨텐츠 가운데 정렬 */
 .center-layout {
   border: 1px solid tomato;
@@ -56,6 +61,7 @@ a {
 .content-title-tyle {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 .content-title-sub-style {
   display: flex;
@@ -85,4 +91,3 @@ a {
   color: var(--color-white);
   font-weight: 700;
 }
-

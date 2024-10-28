@@ -184,9 +184,6 @@ footer p:last-child {
   padding-bottom: 20px;
 }
 
-
-
-
 /* ****************************************
 
 *   title : content style
@@ -264,127 +261,219 @@ footer p:last-child {
   padding-top: 3px;
 }
 
+/* event, special */
 /* 이벤트 섹션 */
-.content-event,
-.content-specia,
-.content-pac-tik-gft {
-  padding: 40px 0;
+.content-event-list {
+  display: flex;
 }
-.content-event img {
+.content-event-list li {
   width: 310px;
-  height: 200px;
-}
-
-.content-event-list ul {
-  display: flex;
-}
-.content-event-list ul li {
   padding: 15px;
-  margin-right: 20px;
 }
-.content-event-list ul li:first-child {
-  padding-left: 0;
-}
-
-.content-event-list ul li h3 {
-  text-align: center;
-  padding: 5px 0;
-}
-.content-event-list ul li p {
-  padding-top: 3px;
-}
-
-/* 특별관 섹션 */
-.content-special > div:nth-child(2) {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 0;
-}
-.content-special > div:nth-child(2) div {
-  width: 50%;
-}
-.content-special > div:nth-child(2) div:first-child {
-  margin-right: 20px;
-}
-.content-special > div:nth-child(2) div:first-child img {
+.content-event-list img {
+  border: 1px solid #000;
   width: 100%;
-  height: 265px;
 }
-.content-special-list {
-  width: 500px;
+.content-event-list li h3 {
+  font-size: 1em;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.content-event-list li p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* 스페셜 섹션 */
+.content-special {
+  display: flex;
+}
+.content-special > div {
+  width: 600px;
+  margin-right: 40px;
+}
+.content-special > div:last-child {
+  margin: 0px;
+}
+.content-special > div img {
+  width: 100%;
 }
 .content-special-list ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  width: 600px;
 }
-.content-special-list ul li {
-  height: 66.25px;
-  display: flex;
-  align-items: center;
-  position: relative;
+.content-special-list li {
+  border-top: 1px solid var(--color-silver);
+}
+.content-special-list li:first-child {
+  border: none;
+}
+.content-special-list li:last-child {
   border-bottom: 1px solid var(--color-silver);
-  position: relative;
-  padding: 15px;
 }
-.content-special-list-tag {
+.content-special-list li a {
+  padding: 25px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content-special-list li a span:first-child {
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+.content-special-list li a span:last-child {
   background-color: var(--color-silver);
-  font-size: 12px;
-  position: absolute;
-  right: 15px;
-  top: 50%;
-  transform: translateY(-50%);
+  padding: 2px;
+}
+.content-special-list li:hover {
+  border: 1px solid var(--color-primary);
+  border-radius: 20px;
+}
+.content-special-list li:hover + li {
+  border-top: 1px solid #fff;
 }
 
 /* 패키지, 티켓, 기프트카드 */
-.content-pac-tik-gft,
-.content-notice > div {
+.content-border {
+  border: 1px solid var(--color-silver);
+  border-radius: 20px;
+  padding: 20px;
+}
+.package-content-button {
+  border: 1px solid var(--color-buttoney);
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 3px 12px;
+}
+.content-package {
   display: flex;
   justify-content: space-between;
 }
-.content-pac-tik-gft img {
-  width: 75px;
-  height: 75px;
-}
-.content-pac-tik-gft > div {
-  border: 1px solid var(--color-silver);
-  border-radius: 20px;
-  padding: 20px;
-  width: 33.3333%;
-  margin-right: 20px;
-}
-.content-pac-tik-gft > div:last-child {
-  margin-right: 0;
-}
-.content-pac-tik-gft ul li {
-  padding: 10px 10px 10px 0;
-}
-.content-pac-tik-gft ul > li > a {
+.content-package li {
+  width: 340px;
   display: flex;
+  justify-content: left;
   align-items: center;
 }
-.content-pac-tik-gft ul > li > a > div:first-child {
-  margin-right: 20px;
+.content-package li img {
+  width: 120px;
 }
-/* 콘텐츠 font */
-.content-pac-tik-gft ul > li > a > div:last-child {
-  font-weight: bold;
+.content-package li a {
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
-.content-pac-tik-gft ul > li > a > div:last-child p {
-  padding: 2px 0;
+.content-package li a div:nth-child(2) {
+  margin-left: 20px;
+  font-weight: 600;
 }
 
-/* 콘텐츠 공지사항/고객센터/앱다운로드 */
+/* 공지사항 */
 .content-notice {
-  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
 }
-.content-notice > div > div:first-child {
+
+/* 공지 콘텐츠 공통 font */
+.notice-content-font {
+  font-size: 1em;
+  padding-bottom: 5px;
+  font-weight: 700;
+}
+
+.content-notice-down {
+  display: flex;
+  justify-content: space-between;
   border: 1px solid var(--color-silver);
   border-radius: 20px;
-  padding: 20px;
 }
-.content-notice > div:first-child {
-  width: 50%;
+.content-notice-noti {
+  width: 690px;
+  border-right: 1px solid var(--color-silver);
+  padding: 30px;
+}
+
+/* 공지사항 */
+.content-notice-noti > div > div {
+  position: relative;
+}
+.content-notice-noti > div > div span:nth-child(2) {
+  position: absolute;
+  top: 3px;
+  left: 85px;
+}
+.content-notice-noti > div > div:first-child {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--color-silver);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content-notice-noti > div:first-child {
+  width: 100%;
+}
+.notice-span-padding {
+  font-size: 14px;
+}
+
+/* 고객센터 */
+.content-notice-noti > div > div:nth-child(2) {
+  display: flex;
+  padding: 20px 0;
+}
+.content-notice-noti > div > div:nth-child(2) h2 {
+  margin-right: 20px;
+}
+.content-notice-noti > div > div:nth-child(2) p {
+  line-height: 1.6;
+  font-size: 14px;
+}
+.content-notice-noti > div > div:nth-child(2) p span:first-child {
+  font-weight: 600;
+}
+.content-notice-noti > div > div:nth-child(2) p span:last-child {
+  color: var(--color-gray-222);
+}
+
+/* FAQ / 1:1 문의 / 대관단체문의 span */
+.content-notice-noti > div:nth-child(2) {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.content-notice-noti > div:nth-child(2) span {
+  padding: 8px 12px;
+  background-color: #ececec;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+.content-notice-noti > div:nth-child(2) span:last-child {
+  margin-right: 0;
+}
+
+/* 앱 다운로드 */
+.content-notice-noti + div {
+  padding: 30px;
+  text-align: center;
+}
+.content-notice-noti + div p {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.content-notice-noti + div img + p {
+  color: var(--color-gray-222);
+}
+/* 큐알코드 이미지 */
+.content-notice-noti + div img {
+  width: 60px;
+  height: 60px;
+  margin: 20px 0;
+}
+
+/* 홈헬스 이미지 */
+.content-notice-down + div img {
+  border-radius: 20px;
 }
 
 /* ****************************************
