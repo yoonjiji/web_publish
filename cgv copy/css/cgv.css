@@ -126,24 +126,12 @@ header {
 
 footer {
   width: 100%;
-  height: 420px;
+  height: 200px;
   background-color: var(--color-footer-bg);
-  margin-top: 60px;
 }
 .footer-content {
   width: 1200px;
   margin: 0 auto;
-  position: relative;
-}
-.footer-content-top {
-  background-color: orange;
-  height: 180px;
-}
-.footer-content-top img {
-  margin-top: -60px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 /* footer-intro */
@@ -183,9 +171,6 @@ footer {
 footer p:last-child {
   padding-bottom: 20px;
 }
-
-
-
 
 /* ****************************************
 
@@ -235,10 +220,12 @@ footer p:last-child {
 }
 
 /* 무비차트/상영예정작 리스트 */
+
+.contnet-moviechart-list {
+}
 .contnet-moviechart-list ul {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .contnet-moviechart-list ul li {
   padding: 15px 15px 0;
@@ -270,183 +257,198 @@ footer p:last-child {
 .content-pac-tik-gft {
   padding: 40px 0;
 }
-.content-event img {
-  width: 310px;
-  height: 200px;
-}
 
-.content-event-list ul {
+.content-event-list {
   display: flex;
 }
-.content-event-list ul li {
-  padding: 15px;
-  margin-right: 20px;
+.content-event-list li {
+  padding: 20px;
 }
-.content-event-list ul li:first-child {
-  padding-left: 0;
+.content-event-list li img {
+  width: 310px;
+  border-radius: 20px;
+}
+.content-event-list li p {
+  padding: 5px;
 }
 
-.content-event-list ul li h3 {
-  text-align: center;
-  padding: 5px 0;
+.event-content-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-top: 10px;
 }
-.content-event-list ul li p {
-  padding-top: 3px;
+.event-content-title-date {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-primary);
 }
 
 /* 특별관 섹션 */
-.content-special > div:nth-child(2) {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 0;
-}
-.content-special > div:nth-child(2) div {
-  width: 50%;
-}
-.content-special > div:nth-child(2) div:first-child {
-  margin-right: 20px;
-}
-.content-special > div:nth-child(2) div:first-child img {
-  width: 100%;
-  height: 265px;
-}
 .content-special-list {
-  width: 500px;
+  display: flex;
 }
+.content-special-list > div,
 .content-special-list ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  width: 600px;
 }
-.content-special-list ul li {
-  height: 66.25px;
-  display: flex;
-  align-items: center;
-  position: relative;
-  border-bottom: 1px solid var(--color-silver);
-  position: relative;
-  padding: 15px;
+.content-special-list > div {
+  margin-right: 40px;
 }
-.content-special-list-tag {
-  background-color: var(--color-silver);
-  font-size: 12px;
-  position: absolute;
-  right: 15px;
-  top: 50%;
-  transform: translateY(-50%);
+.content-special-list > div > a > img {
+  width: 100%;
 }
 
-/* 패키지, 티켓, 기프트카드 */
-.content-pac-tik-gft,
-.content-notice > div {
+.content-special-list ul li:hover {
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+.content-special-list ul li:hover + li {
+  border-top: 1px solid #fff;
+}
+.content-special-list ul li a {
+  border-top: 1px solid var(--color-silver);
+  padding: 21px 20px;
   display: flex;
   justify-content: space-between;
-}
-.content-pac-tik-gft img {
-  width: 75px;
-  height: 75px;
-}
-.content-pac-tik-gft > div {
-  border: 1px solid var(--color-silver);
-  border-radius: 20px;
-  padding: 20px;
-  width: 33.3333%;
-  margin-right: 20px;
-}
-.content-pac-tik-gft > div:last-child {
-  margin-right: 0;
-}
-.content-pac-tik-gft ul li {
-  padding: 10px 10px 10px 0;
-}
-.content-pac-tik-gft ul > li > a {
-  display: flex;
   align-items: center;
 }
-.content-pac-tik-gft ul > li > a > div:first-child {
-  margin-right: 20px;
+.content-special-list ul li a:last-child {
+  border-bottom: 1px solid var(--color-silver);
 }
-/* 콘텐츠 font */
-.content-pac-tik-gft ul > li > a > div:last-child {
+.content-special-list ul li span:first-child {
+  font-size: 1.1em;
+  letter-spacing: 2px;
   font-weight: bold;
 }
-.content-pac-tik-gft ul > li > a > div:last-child p {
-  padding: 2px 0;
+.content-special-list ul li span:last-child {
+  display: inline-block;
+  padding: 5px;
+  background-color: var(--color-silver);
 }
 
-/* 콘텐츠 공지사항/고객센터/앱다운로드 */
-.content-notice {
-  margin-bottom: 40px;
-}
-.content-notice > div > div:first-child {
-  border: 1px solid var(--color-silver);
-  border-radius: 20px;
-  padding: 20px;
-}
-.content-notice > div:first-child {
-  width: 50%;
-}
-
-/* ****************************************
-
-*   title : Login form style
-*   author : hong@naver.com
-*   final date : 2024/10/28
-
-******************************************* */
-
-.login-form form {
-  width: 800px;
-  margin: 0 auto;
+/* 패키지, 영화관람권, 기프트카드 */
+.package-content-list {
   display: flex;
   justify-content: space-between;
-  color: var(--color-login-font);
-  font-size: 14px;
+  margin: 60px 0 30px 0;
 }
-.login-form ul {
-  border: 1px solid green;
-  width: 420px;
+.package-content-list img {
+  width: 100px;
 }
-.login-form ul li {
-  padding: 5px;
-}
-.login-form ul li:first-child p {
+.package-title-font {
+  font-size: 1.2em;
   font-weight: 600;
-  margin-bottom: 20px;
-  color: var(--color-login-font);
+}
+.package-title-button {
+  border: 1px solid var(--color-silver);
+  color: var(--color-primary);
+  padding: 4px 8px;
+  border-radius: 20px;
+  background-color: #fff;
 }
 
-.login-form input:not(input[type="checkbox"]),
-.login-form button {
-  width: 283px;
-  padding: 10px;
-  font-size: 12px;
+.package-content-border {
+  border: 1px solid silver;
+  border-radius: 20px;
+  padding: 20px;
+  width: 380px;
 }
-.login-input {
-  padding-left: 20px;
+.package-content-border > div {
+  display: flex;
+  justify-content: space-between;
+}
+.package-content-border > ul li div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+/* 공지사항 */
+.notice-content-list,
+.notice-content-list > div:first-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+.notice-content-border {
   border: 1px solid var(--color-silver);
+  border-radius: 20px;
+  width: 900px;
+  height: 300px;
+  margin-bottom: 70px;
 }
-.login-form button {
-  outline-color: var(--color-button);
-  outline-style: solid;
-  outline-width: 1px;
+.notice-content-list > div > div:first-child {
+  padding: 20px;
+
+  border-right: 1px solid var(--color-silver);
+  width: 70%;
 }
-.login-form ul li:nth-child(5) {
-  width: 290px;
+.notice-content-list > div > div:nth-child(2) {
+  width: 30%;
+  padding: 20px;
+}
+
+.notice-content-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 9px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--color-silver);
 }
-.login-form ul li:nth-child(5) a {
-  text-decoration: underline;
+.notice-content-title > div span:first-child,
+.notice-content-border > div > div > div:nth-child(2) h2 {
+  margin-right: 40px;
+}
+.notice-content-title + div {
+  padding-top: 20px;
+}
+.notice-content-title + div p {
+  padding: 20px 0;
+}
+
+/* 고객센터 텍스트만 있는 애 */
+.notice-content-border > div > div > div:nth-child(2) {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.notice-content-border > div > div > div:nth-child(2) p {
+  padding-top: 0;
+  line-height: 1.8;
+}
+.notice-content-border > div > div > div:nth-child(2) p span {
+  font-weight: bold;
+}
+
+.notice-content-button > button {
+  background-color: #e9e9e9;
+  border: none;
+  padding: 7px;
+  font-size: 1em;
   font-weight: 700;
-  color: var(--color-login-font);
+  margin-right: 15px;
+  border-radius: 5px;
 }
-.login-form ul li:nth-child(5) div:last-child > :nth-child(2) {
-  padding-right: 10px;
+
+/* 앱다운로드 */
+.download-content {
+text-align: center;
 }
-.login-form ul li:last-child button {
-  background-color: rgb(25, 205, 96);
-  outline-color: #fff;
+.download-content h2 {
+  padding-top: 20px;
+}
+.download-content p {
+  font-size: 12px;
+}
+.download-content img + p {
+  font-weight: bold;
+  color: var(--color-gray-222);
+}
+.download-content img {
+  width: 120px;
+  padding: 30px;
 }
