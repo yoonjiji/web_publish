@@ -220,9 +220,6 @@ footer p:last-child {
 }
 
 /* 무비차트/상영예정작 리스트 */
-
-.contnet-moviechart-list {
-}
 .contnet-moviechart-list ul {
   display: flex;
   justify-content: space-between;
@@ -436,7 +433,7 @@ footer p:last-child {
 
 /* 앱다운로드 */
 .download-content {
-text-align: center;
+  text-align: center;
 }
 .download-content h2 {
   padding-top: 20px;
@@ -451,4 +448,80 @@ text-align: center;
 .download-content img {
   width: 120px;
   padding: 30px;
+}
+
+/* ****************************************
+
+*   title : Login form style
+*   author : hong@naver.com
+*   final date : 2024/10/25
+
+******************************************* */
+.login-form {
+  margin-bottom: 80px;
+}
+.login-form form {
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: var(--color-primary);
+  font-weight: 700;
+}
+.login-form form ul {
+  width: 420px;
+}
+
+/* 맨위 텍스트 */
+.login-form form ul li:first-child {
+  margin-bottom: 20px;
+}
+
+/* 인풋 */
+.login-form input:not(input[type="checkbox"]),
+.login-form form ul li button {
+  width: 300px;
+  padding: 12px;
+  border: 1px solid var(--color-silver);
+  margin-bottom: 10px;
+}
+
+/* 버튼 */
+.login-form form ul li button {
+  background-color: tomato;
+  color: var(--color-white);
+  border: 1px solid var(--color-white);
+  outline: 1px solid tomato;
+  font-size: 1.2em;
+}
+
+/* 아이디저장, 아이디찾기, 비번찾기 */
+.login-form form ul li:last-child {
+  width: 310px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+.login-form form ul li:last-child div:last-child a {
+  text-decoration: underline;
+}
+.login-form form ul li:last-child div:last-child span {
+  padding-right: 7px;
+}
+.login-form form ul li:last-child div:last-child span:last-child {
+  padding: 0px;
+}
+
+/* ****************************************
+
+*   title : Join form style
+*   author : hong@naver.com
+*   final date : 2024/10/25
+
+******************************************* */
+.join-form form {
+  border: 1px solid blue;
+  width: 800px;
+  margin: 0 auto;
 }
