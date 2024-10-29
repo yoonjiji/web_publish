@@ -539,3 +539,232 @@ footer p:last-child {
   background-color: rgb(25, 205, 96);
   outline-color: #fff;
 }
+
+/* ****************************************
+
+*   title : join form style
+*   author : hong@naver.com
+*   final date : 2024/10/29
+
+******************************************* */
+.join-form form {
+  border: 1px solid green;
+  width: 500px;
+  margin: 0 auto;
+}
+.join-form ul {
+  padding: 40px;
+}
+.join-form ul li {
+  padding-top: 20px;
+}
+.join-form ul li div {
+  border: 1px solid var(--color-silver);
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 10px;
+}
+.join-form ul li:first-child > div,
+.join-form ul li:nth-child(6) > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* title 설정 */
+.join-form form ul li label {
+  font-size: 1em;
+  font-weight: 700;
+  color: var(--color-primary);
+  padding-right: 5px;
+}
+.join-form form ul li label + span {
+  font-size: 0.7em;
+  font-weight: 600;
+  color: var(--color-button);
+}
+
+/* 인풋 */
+.join-form form ul li input {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 7px 0;
+  padding-left: 10px;
+}
+/* id input */
+.join-form ul li:first-child > div {
+  padding: 5px;
+}
+.join-form ul li:first-child > div input {
+  width: 60%;
+  margin-right: 10px;
+}
+/* email input */
+.join-form ul li:nth-child(6) > div {
+  border: none;
+  padding: 0;
+}
+.join-form ul li:nth-child(6) > div input,
+.join-form ul li:nth-child(6) > div select {
+  border: 1px solid var(--color-silver);
+  border-radius: 7px;
+  padding: 10px;
+}
+.join-form ul li:nth-child(6) > div input {
+  width: 50%;
+  margin-right: 20px;
+  padding-left: 20px;
+}
+.join-form ul li:nth-child(6) > div select {
+  width: 50%;
+  margin-left: 20px;
+}
+
+/* 공통 버튼 */
+.join-form form ul li button {
+  padding: 8px 30px;
+  background-color: var(--color-button);
+  color: var(--color-white);
+  border: 1px solid var(--color-white);
+  border-radius: 7px;
+}
+/* 가입하기, 가입취소 버튼 */
+.join-form form ul li:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.join-form form ul li:last-child button {
+  margin-right: 10px;
+}
+.join-form form ul li:last-child button:last-child {
+  background-color: rgb(226, 226, 15);
+}
+
+/* ****************************************
+
+*   title : My CGV form style
+*   author : hong@naver.com
+*   final date : 2024/10/29
+
+******************************************* */
+.mycgv div {
+  display: flex;
+  justify-content: center;
+}
+.mycgv div span {
+  border: 1px solid tomato;
+  display: inline-block;
+  width: 220px;
+  padding: 30px;
+  text-align: center;
+  margin: 30px 20px;
+}
+.mycgv div span:hover {
+  background-color: var(--color-button);
+}
+
+/* ****************************************
+
+*   title : Support form style
+*   author : hong@naver.com
+*   final date : 2024/10/29
+
+******************************************* */
+
+.support-content {
+  border: 1px solid green;
+  width: 800px;
+  margin: 0 auto;
+}
+
+/* fonts */
+.support-content p,
+.support-content td {
+  color: var(--color-gray-222);
+  font-size: 14px;
+}
+
+/* input */
+.support-content > p + div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px 0 10px;
+}
+.support-content > div select,
+.support-content > div input,
+.support-content > div button {
+  padding: 5px 10px;
+}
+.support-content > div select,
+.support-content > div input {
+  border: 1px solid var(--color-silver);
+  color: var(--color-gray-222);
+}
+.support-content > div input {
+  margin: 0 5px;
+}
+.support-content > div button {
+  border: 1px solid var(--color-white);
+  background-color: var(--color-black);
+  color: var(--color-white);
+  outline: 1px solid var(--color-black);
+}
+
+/* 총 27건이 검색되었습니다 p태그 */
+.support-content nav + p {
+  padding: 30px 0 20px;
+}
+
+/* menu */
+.support-content nav {
+  border-bottom: 1px solid var(--color-gray-222);
+  width: 100%;
+}
+.support-content nav ul {
+  display: flex;
+  justify-content: flex-start;
+}
+.support-content nav ul li a {
+  display: inline-block;
+  border-right: 1px solid var(--color-white);
+  padding: 7px 20px;
+  background-color: var(--color-gray-222);
+  font-size: 12px;
+  color: var(--color-white);
+}
+.support-content nav ul li:first-child a {
+  background-color: var(--color-button);
+}
+
+/* table */
+.support-content table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+.support-content table th,
+.support-content table td {
+  padding: 15px;
+}
+.support-content table thead tr th:nth-child(3),
+.support-content table tbody tr td:nth-child(3) {
+  text-align: left;
+}
+.support-content table thead {
+  border-top: 1px solid var(--color-silver);
+  border-bottom: 1px solid var(--color-silver);
+  background-color: #f1f1f1;
+}
+.support-content table tfoot {
+  letter-spacing: 5px;
+  font-weight: 700;
+  font-size: 1em;
+}
+.support-content table tfoot span {
+  text-decoration: underline;
+  color: var(--color-button);
+}

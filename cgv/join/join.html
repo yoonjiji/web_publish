@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CGV Join Form</title>
     <!-- style -->
-    <link rel="stylesheet" href="/cgv/css/commons.css">
+    <link rel="stylesheet" href="/cgv/css/commons.css" />
+    <link rel="stylesheet" href="/cgv/css/cgv.css" />
   </head>
   <body>
     <div id="wrap">
@@ -19,8 +20,7 @@
 
       <div id="contents">
         <div class="center-layout join-form">
-          <h1 class="center-title">Join Form</h1>
-          <p>회원이 되어 다양한 혜택을 경험해보세요!</p>
+          <h1 class="center-title">회원가입</h1>
           <form action="#" method="post">
             <ul>
               <li>
@@ -40,50 +40,60 @@
               <li>
                 <label for="">비밀번호</label>
                 <span>12자 이내의 비밀번호를 입력해주세요</span>
-                <input
-                  type="password"
-                  name="pwd"
-                  placeholder="비밀번호 입력(문자, 숫자, 특수문자 포함 8~20자)"
-                />
+                <div>
+                  <input
+                    type="password"
+                    name="pwd"
+                    placeholder="비밀번호 입력(문자, 숫자, 특수문자 포함 8~20자)"
+                  />
+                </div>
               </li>
 
               <li>
                 <label for="">비밀번호 확인</label>
                 <span>비밀번호가 일치하지 않습니다</span>
-                <input
-                  type="password"
-                  name="cpwd"
-                  placeholder="비밀번호 재입력"
-                />
+                <div>
+                  <input
+                    type="password"
+                    name="cpwd"
+                    placeholder="비밀번호 재입력"
+                  />
+                </div>
               </li>
               <li>
                 <label for="">이름</label>
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="이름을 입력해주세요"
-                />
+                <div>
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="이름을 입력해주세요"
+                  />
+                </div>
               </li>
 
               <li>
                 <label for="">전화번호</label>
-                <input
-                  type="text"
-                  name="phoneNo"
-                  placeholder="휴대폰 번호 입력('-' 제외 11자리 입력)"
-                />
+                <div>
+                  <input
+                    type="text"
+                    name="phoneNo"
+                    placeholder="휴대폰 번호 입력('-' 제외 11자리 입력)"
+                  />
+                </div>
               </li>
 
               <li>
                 <label for="">이메일 주소</label>
-                <input type="text" name="email" placeholder="이메일 주소" />
-                <span>@</span>
-                <select name="emaildomain">
-                  <option value="default">선택</option>
-                  <option value="naver.com">naver.com</option>
-                  <option value="gmail.com">gmail.com</option>
-                  <option value="daum.net">daum.net</option>
-                </select>
+                <div>
+                  <input type="text" name="email" placeholder="이메일 주소" />
+                  <span>@</span>
+                  <select name="emaildomain">
+                    <option value="default">선택</option>
+                    <option value="naver.com">naver.com</option>
+                    <option value="gmail.com">gmail.com</option>
+                    <option value="daum.net">daum.net</option>
+                  </select>
+                </div>
               </li>
 
               <li>
