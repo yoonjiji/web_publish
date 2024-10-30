@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #333;
+  color: var(--color-primary);
 }
 li {
   list-style: none;
@@ -43,6 +43,7 @@ a {
   border: 1px solid red;
   width: 1200px;
   margin: 0 auto;
+  margin-bottom: 80px;
 }
 .center-title {
   border: 1px solid blue;

@@ -21,36 +21,47 @@
 
       <div id="contents">
         <div class="login-form center-layout">
-          <h1 class="center-title">Login Form</h1>
+          <h1 class="center-title">로그인</h1>
+
           <form action="#" method="post">
-            <ul>
-              <li>
-                아이디 비밀번호를 입력하신 후, 로그인 버튼을 클릭해 주세요.
-              </li>
-              <li>
-                <input type="text" name="id" placeholder="입력해주세요" />
-              </li>
-              <li>
-                <input
-                  type="text"
-                  name="fwd"
-                  placeholder="비밀번호를 입력해주세요"
-                />
-              </li>
-              <li>
-                <button>로그인</button>
-              </li>
-              <li>
-                <div>
-                  <input type="checkbox" />
-                  <label for="">아이디 저장</label>
-                </div>
-                <div>
-                  <a href="#">아이디 찾기</a><span>&gt;</span>
-                  <a href="#">비밀번호 찾기</a><span>&gt;</span>
-                </div>
-              </li>
-            </ul>
+            <!-- 메뉴탭/로그인창 -->
+            <div class="login-wrap">
+              <ul class="login-menu">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">비회원 예매</a></li>
+                <li><a href="#">비회원 예매확인</a></li>
+              </ul>
+              <ul class="login-input">
+                <li>
+                  아이디 비밀번호를 입력하신 후, 로그인 버튼을 클릭해 주세요.
+                </li>
+                <li>
+                  <input type="text" name="id" placeholder="입력해주세요" />
+                </li>
+                <li>
+                  <input
+                    type="text"
+                    name="fwd"
+                    placeholder="비밀번호를 입력해주세요"
+                  />
+                </li>
+                <li>
+                  <button>로그인</button>
+                </li>
+                <li class="login-input-find">
+                  <div>
+                    <input type="checkbox" />
+                    <label for="">아이디 저장</label>
+                  </div>
+                  <div>
+                    <a href="#">아이디 찾기</a><span>&gt;</span>
+                    <a href="#">비밀번호 찾기</a><span>&gt;</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- 광고 이미지 -->
             <div>
               <img
                 src="https://adimg.cgv.co.kr//images/202206/loginplus/350x300.png"
