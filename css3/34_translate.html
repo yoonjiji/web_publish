@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Translate</title>
+    <style>
+      .translate {
+        /* perspective: 500px; */
+      }
+      .translate img {
+        width: 300px;
+        transition: 0.4s;
+      }
+      .translate img:hover {
+        /* transform: translate(150px, 150px) scale(2); */
+        /* transform: rotate(360deg); */
+      }
+      .swing-bottom-fwd {
+        -webkit-animation: swing-bottom-fwd 0.4s
+          cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+        animation: swing-bottom-fwd 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+          both;
+      }
+      @keyframes swing-bottom-fwd {
+        0% {
+          -webkit-transform: rotateX(0);
+          transform: rotateX(0);
+          -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+        }
+        100% {
+          -webkit-transform: rotateX(-180deg);
+          transform: rotateX(-180deg);
+          -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Translate</h1>
+    <div class="translate">
+      <img src="/cgv/images/event1.jpg" alt="img" />
+    </div>
+    <img src="/cgv/images/logoRed.png" alt="logo" class="swing-bottom-fwd" />
+  </body>
+</html>

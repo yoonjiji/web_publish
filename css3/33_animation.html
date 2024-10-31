@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+        /* animation-name: changeColor;
+        animation-duration: 2s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite; */
+        animation: changeColor 3s 0s infinite;
+      }
+      @keyframes changeColor {
+        from {
+          background-color: rgb(215, 21, 98);
+        }
+        50% {
+          background-color: darkcyan;
+        }
+        to {
+          background-color: darkmagenta;
+        }
+      }
+      h1 {
+        opacity: 1;
+        color: lawngreen;
+        animation: fadeup 3s 0s forwards infinite;
+      }
+      @keyframes fadeup {
+        from {
+          opacity: 1;
+        }
+        to {
+          opacity: 0.3;
+        }
+      }
+
+      .box_img {
+        width: 300px;
+        height: 300px;
+        border: 1px solid silver;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        animation: boxImage 10s ease 0s infinite;
+      }
+      @keyframes boxImage {
+        from {
+          background-image: url(/cgv/images/event1.jpg);
+        }
+        30% {
+          background-image: url(/cgv/images/giftcard.jpg);
+        }
+        60% {
+          background-image: url(/cgv/images/header_card_img.png);
+        }
+        to {
+          background-image: url(/cgv/images/homehealth.png);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Animation</h1>
+    <div class="box">box</div>
+    <div class="box_img"></div>
+  </body>
+</html>

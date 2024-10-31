@@ -116,6 +116,12 @@ header {
   padding: 0;
 }
 
+.header-search-icon {
+  font-size: 20px;
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
 /* ****************************************
 
 *   title : footer style
@@ -516,16 +522,13 @@ footer p:last-child {
   color: var(--color-login-font);
 }
 
-.login-form input:not(input[type="checkbox"]),
-.login-form button {
+.login-form button,
+.login-form-input {
   width: 283px;
   padding: 10px;
   font-size: 12px;
 }
-.login-input {
-  padding-left: 20px;
-  border: 1px solid var(--color-silver);
-}
+
 .login-form button {
   outline-color: var(--color-button);
   outline-style: solid;
@@ -549,6 +552,22 @@ footer p:last-child {
 .login-form ul li:last-child button {
   background-color: rgb(25, 205, 96);
   outline-color: #fff;
+}
+
+/* 로그인, 패스워드 아이콘 */
+.login-form-input {
+  display: block;
+  border: 1px solid var(--color-silver);
+}
+.login-form-input input {
+  border: none;
+  border-left: 1px solid var(--color-silver);
+  margin-left: 5px;
+  outline: none;
+  padding-left: 5px;
+}
+.login-form-input span i {
+  color: #b1b1b1;
 }
 
 /* ****************************************

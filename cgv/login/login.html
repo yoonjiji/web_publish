@@ -8,6 +8,15 @@
     <!-- style -->
     <link rel="stylesheet" href="/cgv/css/commons.css" />
     <link rel="stylesheet" href="/cgv/css/cgv.css" />
+
+    <!-- font awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div id="wrap">
@@ -30,21 +39,17 @@
                 </p>
               </li>
               <li>
-                <input
-                  type="text"
-                  name="id"
-                  class="login-input"
-                  placeholder="아이디를 입력해주세요"
-                />
+                <div class="login-form-input">
+                  <span><i class="fa-regular fa-user"></i></span>
+                  <input type="text" name="id" />
+                </div>
               </li>
 
               <li>
-                <input
-                  type="password"
-                  name="fwd"
-                  class="login-input"
-                  placeholder="비밀번호"
-                />
+                <div class="login-form-input">
+                  <span><i class="fa-solid fa-lock"></i></span>
+                  <input type="password" name="fwd" />
+                </div>
               </li>
 
               <li>
