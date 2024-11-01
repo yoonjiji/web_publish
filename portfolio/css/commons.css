@@ -60,3 +60,18 @@ img {
   font-weight: 500;
   margin-bottom: 40px;
 }
+
+/* top btn arrow */
+.top_button {
+  position: fixed;
+  bottom: 80px;
+  right: 40px;
+}
+.top_button i {
+  color: var(--color-white);
+  font-size: 48px;
+  background-color: var(--color-black);
+  padding: 20px 25px;
+  border-radius: 50%;
+  box-shadow: 8px 8px 0px 0px var(--color-main);
+}

@@ -11,15 +11,19 @@
 /* header */
 .header-home {
   background-color: var(--color-black);
+  position: relative;
 }
 
 /*  로고, 메뉴 */
 .header-home-logo {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
-  padding: 0 10px;
+  height: 70px;
+  padding: 0 20px;
+  position: fixed;
+  background-color: var(--color-black);
 }
 .header-home-logo h2 img {
   width: 40px;
@@ -86,26 +90,26 @@
 *   final date : 2024/11/01
 
 ******************************************* */
-footer {
+#footer {
   background-color: var(--color-black);
   text-align: center;
   padding: 80px 0 20px;
 }
-footer h1 {
+#footer h1 {
   color: var(--color-white);
 }
-footer p {
+#footer p {
   margin-top: 15px;
   color: var(--color-white);
 }
-footer i {
+#footer i {
   font-size: 24px;
   color: var(--color-white);
 }
-footer i:first-child {
+#footer i:first-child {
   margin-right: 10px;
 }
-footer p:last-child {
+#footer p:last-child {
   font-size: 12px;
 }
 
@@ -118,10 +122,10 @@ footer p:last-child {
 ******************************************* */
 
 /* 공통 */
-.about_me,
-.my_skills,
-.my_work,
-.testimonia {
+#about_me,
+#my_skills,
+#my_work,
+#testimonia {
   padding: 40px;
 }
 .about_me-title,
@@ -130,13 +134,13 @@ footer p:last-child {
 .testimonia-title {
   text-align: center;
 }
-.my_skills h2,
-.my_skills h3,
-.my_skills p,
-.my_skills span,
-.my_skills li,
-.my_work h2,
-.my_work h3,
+#my_skills h2,
+#my_skills h3,
+#my_skills p,
+#my_skills span,
+#my_skills li,
+#my_work h2,
+#my_work h3,
 .my_work-menu ul li a {
   color: var(--color-white);
 }
@@ -194,7 +198,7 @@ footer p:last-child {
 }
 
 /* my skill */
-.my_skills {
+#my_skills {
   background-color: var(--color-sub);
 }
 
@@ -274,7 +278,7 @@ footer p:last-child {
 }
 
 /* my work */
-.my_work {
+#my_work {
   background-color: var(--color-black);
 }
 .my_work-menu {
@@ -325,7 +329,7 @@ footer p:last-child {
 }
 
 /* testimonial */
-.testimonia {
+#testimonia {
   padding-bottom: 80px;
 }
 .testimonia-title {
