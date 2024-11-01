@@ -24,6 +24,9 @@
   padding: 0 20px;
   position: fixed;
   background-color: var(--color-black);
+  top: 0;
+  left: 0;
+  z-index: 100;
 }
 .header-home-logo h2 img {
   width: 40px;
@@ -53,6 +56,7 @@
 .header-home-profile {
   text-align: center;
   padding: 40px 0 80px;
+  margin-top: 70px;
 }
 .header-home-profile ul li {
   margin-bottom: 25px;
