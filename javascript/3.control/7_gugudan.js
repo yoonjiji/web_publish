@@ -20,6 +20,8 @@ for (let i = 1; i <= 9; i++) {
   }
   console.log(rows);
 }
+// console.log는 한줄씩만 출력해주기 때문에
+// 값을 중첩하기 위해서 변수 rows 선언
 
 // 별찍기
 for (let i = 0; i < 6; i++) {

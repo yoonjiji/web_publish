@@ -5,7 +5,7 @@ function add(a, b) {
 }
 
 console.log(add);
-let sum = add;
+let sum = add; // call by reference
 // 똑같은 함수를 reference를 해서 보고 있다.
 console.log(sum);
 add(1, 3);
