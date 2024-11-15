@@ -33,8 +33,8 @@ function createObj(empno, ename, age) {
 }
 console.log(createObj("1234", "홍길동", 20));
 console.log(createObj("5678", "김철수", 30));
-let emp1 = createObj("1234", "홍길동", 20);
-let emp2 = createObj("5678", "김철수", 30);
+// let emp1 = createObj("1234", "홍길동", 20);
+// let emp2 = createObj("5678", "김철수", 30);
 
 /* 
     [
