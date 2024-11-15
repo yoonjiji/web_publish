@@ -47,7 +47,7 @@
         <input type="text" id="sno" />
       </li>
       <li>
-        <label for="">학생명</label>
+        <label for="">성명</label>
         <input type="text" id="name" />
       </li>
       <li>
@@ -66,20 +66,20 @@
     <!-- 교수정보 -->
     <ul id="professor">
       <li>
-        <label for="">이름</label>
-        <input type="text" id="sno" />
-      </li>
-      <li>
-        <label for="">나이</label>
+        <label for="">성명</label>
         <input type="text" id="name" />
       </li>
       <li>
-        <label for="">거주지</label>
+        <label for="">나이</label>
         <input type="text" id="age" />
       </li>
       <li>
+        <label for="">거주지</label>
+        <input type="text" id="adress" />
+      </li>
+      <li>
         <label for="">과목</label>
-        <input type="text" id="address" />
+        <input type="text" id="subject" />
       </li>
       <li>
         <button type="button" onclick="signupCheck()">Signup</button>
@@ -89,20 +89,20 @@
     <!-- 학부모 정보 -->
     <ul id="parent">
       <li>
-        <label for="">성함</label>
-        <input type="text" id="sno" />
-      </li>
-      <li>
-        <label for="">나이</label>
+        <label for="">성명</label>
         <input type="text" id="name" />
       </li>
       <li>
-        <label for="">거주지</label>
+        <label for="">나이</label>
         <input type="text" id="age" />
       </li>
       <li>
-        <label for="">자식이름</label>
+        <label for="">거주지</label>
         <input type="text" id="address" />
+      </li>
+      <li>
+        <label for="">자식이름</label>
+        <input type="text" id="cname" />
       </li>
       <li>
         <button type="button" onclick="signupCheck()">Signup</button>
@@ -112,15 +112,11 @@
     <!-- 교직원정보 -->
     <ul id="employee">
       <li>
-        <label for="">성함</label>
-        <input type="text" id="sno" />
-      </li>
-      <li>
-        <label for="">나이</label>
+        <label for="">성명</label>
         <input type="text" id="name" />
       </li>
       <li>
-        <label for="">거주지</label>
+        <label for="">나이</label>
         <input type="text" id="age" />
       </li>
       <li>
@@ -128,9 +124,16 @@
         <input type="text" id="address" />
       </li>
       <li>
+        <label for="">부서</label>
+        <input type="text" id="department" />
+      </li>
+      <li>
         <button type="button" onclick="signupCheck()">Signup</button>
         <button type="reset">Cancle</button>
       </li>
     </ul>
+
+    <!-- 입력정보 출력 -->
+    <div id="result"></div>
   </body>
 </html>
