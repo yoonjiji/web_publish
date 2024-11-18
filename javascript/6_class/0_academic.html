@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./0_academinc.js"></script>
+  </head>
+  <body>
+    <h1>Academic Signup</h1>
+    <ul>
+      <li>
+        <input type="radio" name="type" value="1" checked /><span>학생</span>
+        <input type="radio" name="type" value="2" /><span>교수</span>
+        <input type="radio" name="type" value="3" /><span>학부</span>
+        <input type="radio" name="type" value="4" /><span>직원</span>
+      </li>
+    </ul>
+    <ul id="student">
+      <li>
+        <label for="">학번</label>
+        <input type="text" id="sno" />
+      </li>
+      <li>
+        <label for="">성명</label>
+        <input type="text" id="name" />
+      </li>
+      <li>
+        <label for="">나이</label>
+        <input type="text" id="age" />
+      </li>
+      <li>
+        <label for="">주소</label>
+        <input type="text" id="address" />
+      </li>
+      <li>
+        <button type="button" onclick="signupCheck()">Signup</button>
+        <button type="button">Cancle</button>
+      </li>
+    </ul>
+    <ul id="professor">
+      <li>
+        <label for="">성명</label>
+        <input type="text" id="name" />
+      </li>
+      <li>
+        <label for="">나이</label>
+        <input type="text" id="age" />
+      </li>
+      <li>
+        <label for="">주소</label>
+        <input type="text" id="address" />
+      </li>
+      <li>
+        <label for="">과목</label>
+        <input type="text" id="subject" />
+      </li>
+      <li>
+        <button type="button" onclick="signupCheck()">Signup</button>
+        <button type="button">Cancle</button>
+      </li>
+    </ul>
+    <ul id="parent">
+      <li>
+        <label for="">성명</label>
+        <input type="text" id="name" />
+      </li>
+      <li>
+        <label for="">나이</label>
+        <input type="text" id="age" />
+      </li>
+      <li>
+        <label for="">주소</label>
+        <input type="text" id="address" />
+      </li>
+      <li>
+        <label for="">자녀 성함</label>
+        <input type="text" id="cname" />
+      </li>
+      <li>
+        <button type="button" onclick="signupCheck()">Signup</button>
+        <button type="button">Cancle</button>
+      </li>
+    </ul>
+    <ul id="employee">
+      <li>
+        <label for="">성명</label>
+        <input type="text" id="name" />
+      </li>
+      <li>
+        <label for="">나이</label>
+        <input type="text" id="age" />
+      </li>
+      <li>
+        <label for="">주소</label>
+        <input type="text" id="address" />
+      </li>
+      <li>
+        <label for="">부서</label>
+        <input type="text" id="department" />
+      </li>
+      <li>
+        <button type="button" onclick="signupCheck()">Signup</button>
+        <button type="button">Cancle</button>
+      </li>
+    </ul>
+  </body>
+</html>

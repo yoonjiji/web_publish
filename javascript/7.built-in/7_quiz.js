@@ -6,7 +6,7 @@ for (let i = 0; i < str.length; i++) {
 
 console.clear();
 
-// 2. '독서, 수영, 영화, 게임, 사이클'
+// 2. '독서, 수영, 영화, 게임, 사이클' 한 줄씩 출력
 let hobby = "독서, 수영, 영화, 게임, 사이클";
 hobby = hobby.split(",");
 console.log(hobby);
