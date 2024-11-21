@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>caculator</title>
+    <script type="module" src="./dcal2.js"></script>
+    <!-- type="module로 넣으면 바로 DHTML을 만들겠다" -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      li {
+        list-style: none;
+      }
+      ul {
+        padding: 40px;
+        width: 600px;
+        margin: 0 auto;
+        background-color: #ffb14c;
+      }
+      input {
+        margin-bottom: 20px;
+        padding: 10px 20px;
+        width: 150px;
+        border: none;
+        border-radius: 7%;
+      }
+      .button {
+        padding: 5px 15px;
+        width: 70px;
+        border: none;
+        background-color: #fffc2f;
+        cursor: pointer;
+        margin-bottom: 20px;
+        border-radius: 7px;
+      }
+      ul li {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="content"></div>
+  </body>
+</html>
