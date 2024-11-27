@@ -13,6 +13,7 @@ export async function kmdb(type, value, title) {
 
   let api = await fetch(url);
   let jsonData = await api.json();
+  console.log(url);
 
   return jsonData;
 }

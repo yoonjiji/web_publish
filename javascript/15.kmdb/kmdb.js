@@ -53,7 +53,6 @@ function searchMovieResult(type, value, title) {
       let actorAll = [];
 
       if (count) {
-        alert("데이터가 존재합니다");
         let info = result.Data[0].Result[0];
         let directors = result.Data[0].Result[0].directors.director;
         let actors = result.Data[0].Result[0].actors.actor;
