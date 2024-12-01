@@ -9,10 +9,6 @@
     <link rel="stylesheet" href="/cgv/css/commons.css" />
     <link rel="stylesheet" href="/cgv/css/cgv.css" />
 
-    <!-- script -->
-    <script src="/cgv/js/cgvForm.js"></script>
-    <!-- type="module" 안넣기 -->
-
     <!-- font awsome -->
     <link
       rel="stylesheet"
@@ -45,37 +41,19 @@
               <li>
                 <div class="login-form-input">
                   <span><i class="fa-regular fa-user"></i></span>
-                  <input
-                    type="text"
-                    name="id"
-                    id="id"
-                    oninput="handleChange(event)"
-                  />
+                  <input type="text" name="id" />
                 </div>
-                <p id="error-msg-id"></p>
               </li>
 
               <li>
                 <div class="login-form-input">
                   <span><i class="fa-solid fa-lock"></i></span>
-                  <input
-                    type="password"
-                    name="pwd"
-                    id="pwd"
-                    oninput="handleChange(event)"
-                  />
+                  <input type="password" name="fwd" />
                 </div>
-                <p id="error-msg-pwd"></p>
               </li>
 
               <li>
-                <button
-                  type="button"
-                  class="btn-main-color"
-                  onclick="loginFormCheck()"
-                >
-                  로그인
-                </button>
+                <button class="btn-main-color">로그인</button>
               </li>
               <li>
                 <div>
@@ -88,9 +66,7 @@
                 </div>
               </li>
               <li>
-                <button type="button" class="btn-main-color">
-                  네이버 로그인
-                </button>
+                <button class="btn-main-color">네이버 로그인</button>
               </li>
             </ul>
             <div>

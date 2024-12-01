@@ -8,19 +8,6 @@
     <!-- style -->
     <link rel="stylesheet" href="/cgv/css/commons.css" />
     <link rel="stylesheet" href="/cgv/css/cgv.css" />
-
-    <!-- script -->
-    <script src="/cgv/js/cgvForm.js"></script>
-    <!-- type="module" 안넣기 -->
-
-    <!-- font awsome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
-      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
   </head>
   <body>
     <div id="wrap">
@@ -34,7 +21,7 @@
 
       <div id="contents">
         <div class="login-form center-layout">
-          <h1 class="center-title">Login</h1>
+          <h1 class="center-title">관리자 로그인</h1>
           <form action="#" method="post">
             <ul>
               <li>
@@ -43,39 +30,25 @@
                 </p>
               </li>
               <li>
-                <div class="login-form-input">
-                  <span><i class="fa-regular fa-user"></i></span>
-                  <input
-                    type="text"
-                    name="id"
-                    id="id"
-                    oninput="handleChange(event)"
-                  />
-                </div>
-                <p id="error-msg-id"></p>
+                <input
+                  type="text"
+                  name="id"
+                  class="login-input"
+                  placeholder="아이디를 입력해주세요"
+                />
               </li>
 
               <li>
-                <div class="login-form-input">
-                  <span><i class="fa-solid fa-lock"></i></span>
-                  <input
-                    type="password"
-                    name="pwd"
-                    id="pwd"
-                    oninput="handleChange(event)"
-                  />
-                </div>
-                <p id="error-msg-pwd"></p>
+                <input
+                  type="password"
+                  name="fwd"
+                  class="login-input"
+                  placeholder="비밀번호"
+                />
               </li>
 
               <li>
-                <button
-                  type="button"
-                  class="btn-main-color"
-                  onclick="loginFormCheck()"
-                >
-                  로그인
-                </button>
+                <button class="btn-main-color">관리자 로그인</button>
               </li>
               <li>
                 <div>
@@ -88,9 +61,7 @@
                 </div>
               </li>
               <li>
-                <button type="button" class="btn-main-color">
-                  네이버 로그인
-                </button>
+                <button class="btn-main-color">네이버 로그인</button>
               </li>
             </ul>
             <div>

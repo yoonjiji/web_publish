@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CGV Support</title>
     <!-- style -->
-    <link rel="stylesheet" href="/cgv/css/commons.css">
-    <link rel="stylesheet" href="/cgv/css/cgv.css">
+    <link rel="stylesheet" href="/cgv/css/commons.css" />
+    <link rel="stylesheet" href="/cgv/css/cgv.css" />
+
+    <!-- script -->
+    <script src="/cgv/js/cgv_support.js"></script>
   </head>
   <body>
     <div id="wrap">
@@ -40,8 +43,14 @@
             <div>
               <nav>
                 <ul>
-                  <li><a href="#">전체</a></li>
-                  <li><a href="#">시스템점검</a></li>
+                  <li>
+                    <a onclick="onChangeNoiceList('total')">전체</a>
+                    <!-- script type=module이면 실행안됨 -->
+                    <!-- js/ html 실행 처리 과정에서 충돌(js가 제일 먼저 실행되게) -->
+                  </li>
+                  <li>
+                    <a onclick="onChangeNoiceList('system')">시스템점검</a>
+                  </li>
                   <li><a href="#">극장</a></li>
                   <li><a href="#">행사/이벤트</a></li>
                   <li><a href="#">제휴이벤트</a></li>
@@ -50,89 +59,7 @@
               </nav>
 
               <p>총27건이 검색되었습니다.</p>
-              <table>
-                <thead>
-                  <tr>
-                    <th scope="col">번호</th>
-                    <th scope="col">구분</th>
-                    <th scope="col">제목</th>
-                    <th scope="col">등록일</th>
-                    <th scope="col">조회수</th>
-                  </tr>
-                </thead>
-
-                <tbody>
-                  <tr>
-                    <td>114</td>
-                    <td>[시스템점검]</td>
-                    <td><a href="#">iOS 18 업데이트 관련 예매 서비스 이용안내</a></td>
-                    <td>2024.09.13</td>
-                    <td>118691</td>
-                  </tr>
-                  <tr>
-                    <td>114</td>
-                    <td>[시스템점검]</td>
-                    <td><a href="#">iOS 18 업데이트 관련 예매 서비스 이용안내</a></td>
-                    <td>2024.09.13</td>
-                    <td>118691</td>
-                  </tr>
-                  <tr>
-                    <td>114</td>
-                    <td>[시스템점검]</td>
-                    <td><a href="#">iOS 18 업데이트 관련 예매 서비스 이용안내</a></td>
-                    <td>2024.09.13</td>
-                    <td>118691</td>
-                  </tr>
-                  <tr>
-                    <td>114</td>
-                    <td>[시스템점검]</td>
-                    <td><a href="#">iOS 18 업데이트 관련 예매 서비스 이용안내</a></td>
-                    <td>2024.09.13</td>
-                    <td>118691</td>
-                  </tr>
-                  <tr>
-                    <td>114</td>
-                    <td>[시스템점검]</td>
-                    <td><a href="#">iOS 18 업데이트 관련 예매 서비스 이용안내</a></td>
-                    <td>2024.09.13</td>
-                    <td>118691</td>
-                  </tr>
-                  <tr>
-                    <td>114</td>
-                    <td>[시스템점검]</td>
-                    <td><a href="#">iOS 18 업데이트 관련 예매 서비스 이용안내</a></td>
-                    <td>2024.09.13</td>
-                    <td>118691</td>
-                  </tr>
-                  <tr>
-                    <td>114</td>
-                    <td>[시스템점검]</td>
-                    <td><a href="#">iOS 18 업데이트 관련 예매 서비스 이용안내</a></td>
-                    <td>2024.09.13</td>
-                    <td>118691</td>
-                  </tr>
-                  <tr>
-                    <td>114</td>
-                    <td>[시스템점검]</td>
-                    <td><a href="#">iOS 18 업데이트 관련 예매 서비스 이용안내</a></td>
-                    <td>2024.09.13</td>
-                    <td>118691</td>
-                  </tr>
-                  <tr>
-                    <td>114</td>
-                    <td>[시스템점검]</td>
-                    <td><a href="#">iOS 18 업데이트 관련 예매 서비스 이용안내</a></td>
-                    <td>2024.09.13</td>
-                    <td>118691</td>
-                  </tr>
-                </tbody>
-
-                <tfoot>
-                  <tr>
-                    <td colspan="5"><span>1</span> 2 3 4 5 <span>>></span></th>
-                  </tr>
-                </tfoot>
-              </table>
+              <table></table>
             </div>
           </div>
         </div>

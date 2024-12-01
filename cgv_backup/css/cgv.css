@@ -263,10 +263,9 @@ footer p:last-child {
 .contnet-moviechart-list ul li:last-child {
   padding-right: 0;
 }
-.contnet-moviechart-list ul li img {
+.contnet-moviechart-list ul li a img {
   width: 200px;
-  height: 270px;
-  border-radius: 15px;
+  border-radius: 20px;
 }
 
 .contnet-moviechart-list ul li h3 {
@@ -612,7 +611,7 @@ footer p:last-child {
 .join-form form ul li label + span {
   font-size: 0.7em;
   font-weight: 600;
-  color: gray;
+  color: var(--color-button);
 }
 
 /* 인풋 */
