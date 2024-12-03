@@ -1,11 +1,11 @@
-import Avatar from "./Avatar";
+import Avatar from "./Avatar.jsx";
 
 export default function AvatarList({ list }) {
   return (
-    <ul>
+    <ul className="container">
       {list.map((object) => (
         <li>
-          <Avatar img={object.img} name={object.name} age={object.age} />
+          <Avatar img={object.img} name={object.name} />
         </li>
       ))}
     </ul>
