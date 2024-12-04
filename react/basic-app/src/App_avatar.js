@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import "./App.css";
 import Avatar from "./components/Avatar.jsx";
 import AvatarImage from "./components/AvatarImage.jsx";
@@ -6,16 +7,19 @@ import AvatarList from "./components/AvatarList.jsx";
 import Menu from "./components/Menu.jsx";
 
 export default function App() {
-  const imgList = [
-    { img: "/images/people1.webp" },
-    { img: "/images/people2.webp" },
-    { img: "/images/people3.webp" },
-  ];
-  const avatarList = [
-    { img: "/images/people1.webp", name: "Smith" },
-    { img: "/images/people2.webp", name: "James" },
-    { img: "/images/people3.webp", name: "Sujin" },
-  ];
+  const [imgList, setImgList] = useState([]);
+  const [avatarList, setAvatarList] = useState([]);
+
+  useEffect(() => {
+    fetch("data/avatar.json")
+      .then((result) => result.json())
+      .then((jsonDeta) => {
+        setImgList(jsonDeta.imgList);
+        setAvatarList(jsonDeta.avatarList);
+      })
+      .catch();
+  }, []);
+  console.log(`imgList => ${imgList}`);
 
   return (
     <div className="App">
