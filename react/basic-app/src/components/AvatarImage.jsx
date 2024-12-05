@@ -2,5 +2,5 @@
 //  props.img
 
 export default function AvatarImage({ img }) {
-  return <img src={img} className="avatar-img" />;
+  return <img src={img} className="avatar-img" alt="" />;
 }

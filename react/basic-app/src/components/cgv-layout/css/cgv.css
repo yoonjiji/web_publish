@@ -1,0 +1,819 @@
+@charset "utf-8";
+
+/* ****************************************
+
+*   title : header style
+*   author : hong@naver.com
+*   final date : 2024/10/24
+
+******************************************* */
+
+header {
+  width: 100%;
+  height: 150px;
+  border-bottom: 4px solid rgba(255, 99, 71, 0.746);
+}
+.header-top,
+.header-bottom-content {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* header-top */
+.header-top,
+.header-bottom-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-top {
+  padding: 20px 0;
+}
+.header-top-logo {
+  width: 350px;
+  position: relative;
+}
+.header-top-logo > a > img {
+  width: 120px;
+}
+.header-top-logo > span {
+  position: absolute;
+  top: 32px;
+  left: 130px;
+  overflow: hidden;
+  letter-spacing: 5px;
+  font-weight: 500;
+}
+.header-top ul,
+.header-bottom ul {
+  display: flex;
+}
+.header-top ul li {
+  margin-right: 20px;
+  position: relative;
+}
+.header-top ul li:last-child {
+  margin: 0;
+}
+.header-top ul li a {
+  color: var(--color-primary);
+}
+.header-menu-icon {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 55px;
+}
+.header-menu-icon img {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 5px;
+}
+.header-menu-icon span {
+  width: 55px;
+  height: 19px;
+  font-size: 12px;
+  font-weight: 500;
+  display: block;
+  text-indent: -3px;
+}
+
+.header-top-card {
+  position: relative;
+  left: 100px;
+  top: 5px;
+}
+
+/* header-bottom */
+.header-bottom {
+  width: 100%;
+  height: 40px;
+  padding: 5px 0;
+  border-top: 1px solid var(--color-silver);
+}
+.header-bottom dl {
+  display: none;
+}
+.header-bottom li {
+  padding: 10px 20px;
+}
+.header-bottom li a {
+  font-weight: 700;
+  color: var(--color-primary);
+}
+.header-bottom-search {
+  border-right: 1px solid var(--color-silver);
+  border-left: 1px solid var(--color-silver);
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
+}
+.header-bottom-search input {
+  width: 80%;
+  border: none;
+  padding: 0;
+}
+
+.header-search-icon {
+  font-size: 20px;
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+/* ****************************************
+
+*   title : footer style
+*   author : hong@naver.com
+*   final date : 2024/10/24
+
+******************************************* */
+
+footer {
+  width: 100%;
+  height: 420px;
+  background-color: var(--color-footer-bg);
+  margin-top: 60px;
+}
+.footer-content {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.footer-content-top {
+  background-color: orange;
+  height: 180px;
+}
+.footer-content-top img {
+  margin-top: -60px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* footer-intro */
+.footer-intro > ul {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--color-silver);
+}
+.footer-intro > ul a {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--color-primary);
+}
+.footer-intro > ul a:hover {
+  text-decoration: underline;
+}
+.footer-intro > ul li:nth-child(7) a {
+  color: var(--color-black);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.footer-intro ~ p {
+  color: var(--color-primary);
+  font-size: 10px;
+  font-weight: 600;
+  padding: 3px 0;
+}
+
+.footer-intro + p {
+  padding-top: 20px;
+}
+
+footer p:last-child {
+  padding-bottom: 20px;
+}
+
+.p {
+  margin-top: 20px;
+}
+.p2 {
+  margin-bottom: 20px;
+}
+.p2 > a {
+  color: var(--color-primary);
+  cursor: default;
+}
+
+/* ****************************************
+
+*   title : content style
+*   author : hong@naver.com
+*   final date : 2024/10/25
+
+******************************************* */
+
+.contents,
+.content-top,
+.contnet-moviechart {
+  width: 100%;
+}
+.content-top {
+  background-color: #000;
+  position: relative;
+  top: -3px;
+}
+.content-top > iframe,
+.contnet-moviechart > div,
+.content-event-special {
+  display: block;
+  width: 1200px;
+  margin: 0 auto;
+}
+/* iframe은 inline 속성이다 */
+
+.contnet-moviechart {
+  background-color: var(--color-moviechart);
+  padding: 40px 0;
+}
+/* 무비차트/상영예정작 타이틀 */
+.contnet-moviechart-title {
+  display: flex;
+  justify-content: space-between;
+}
+/* 공통적으로 적용되는 클래스는 직접 셀렉팅하는 경우 부모를 직관적으로 지정함 */
+
+.contnet-moviechart-title span:first-child {
+  color: var(--color-black);
+}
+.contnet-moviechart-title span:first-child::after {
+  content: "ㅣ";
+  color: var(--color-gray-222);
+  padding: 0 10px;
+}
+
+/* 무비차트/상영예정작 리스트 */
+.contnet-moviechart-list ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contnet-moviechart-list ul li {
+  padding: 15px 15px 0;
+}
+.contnet-moviechart-list ul li:first-child {
+  padding-left: 0;
+}
+.contnet-moviechart-list ul li:last-child {
+  padding-right: 0;
+}
+.contnet-moviechart-list ul li img {
+  width: 200px;
+  height: 270px;
+  border-radius: 15px;
+}
+
+.contnet-moviechart-list ul li h3 {
+  text-align: center;
+  padding: 5px 0;
+}
+.contnet-moviechart-list ul li div:last-child {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3px;
+}
+
+/* event, special */
+/* 이벤트 섹션 */
+.content-event-list {
+  display: flex;
+}
+.content-event-list li {
+  width: 310px;
+  padding: 15px;
+}
+.content-event-list img {
+  border: 1px solid #000;
+  width: 100%;
+}
+.content-event-list li h3 {
+  font-size: 1em;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.content-event-list li p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* 스페셜 섹션 */
+.content-special {
+  display: flex;
+}
+.content-special > div {
+  width: 600px;
+  margin-right: 40px;
+}
+.content-special > div:last-child {
+  margin: 0px;
+}
+.content-special > div img {
+  width: 100%;
+}
+.content-special-list ul {
+  width: 600px;
+}
+.content-special-list li {
+  border-top: 1px solid var(--color-silver);
+}
+.content-special-list li:first-child {
+  border: none;
+}
+.content-special-list li:last-child {
+  border-bottom: 1px solid var(--color-silver);
+}
+.content-special-list li a {
+  padding: 25px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content-special-list li a span:first-child {
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+.content-special-list li a span:last-child {
+  background-color: var(--color-silver);
+  padding: 2px;
+}
+.content-special-list li:hover {
+  border: 1px solid var(--color-primary);
+  border-radius: 20px;
+}
+.content-special-list li:hover + li {
+  border-top: 1px solid #fff;
+}
+
+/* 패키지, 티켓, 기프트카드 */
+.content-border {
+  border: 1px solid var(--color-silver);
+  border-radius: 20px;
+  padding: 20px;
+}
+.package-content-button {
+  border: 1px solid var(--color-buttoney);
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 3px 12px;
+}
+.content-package {
+  display: flex;
+  justify-content: space-between;
+}
+.content-package li {
+  width: 340px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.content-package li img {
+  width: 120px;
+}
+.content-package li a {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.content-package li a div:nth-child(2) {
+  margin-left: 20px;
+  font-weight: 600;
+}
+
+/* 공지사항 */
+.content-notice {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+/* 공지 콘텐츠 공통 font */
+.notice-content-font {
+  font-size: 1em;
+  padding-bottom: 5px;
+  font-weight: 700;
+}
+
+.content-notice-down {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid var(--color-silver);
+  border-radius: 20px;
+}
+.content-notice-noti {
+  width: 690px;
+  border-right: 1px solid var(--color-silver);
+  padding: 30px;
+}
+
+/* 공지사항 */
+.content-notice-noti > div > div {
+  position: relative;
+}
+.content-notice-noti > div > div span:nth-child(2) {
+  position: absolute;
+  top: 3px;
+  left: 85px;
+}
+.content-notice-noti > div > div:first-child {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--color-silver);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content-notice-noti > div:first-child {
+  width: 100%;
+}
+.notice-span-padding {
+  font-size: 14px;
+}
+
+/* 고객센터 */
+.content-notice-noti > div > div:nth-child(2) {
+  display: flex;
+  padding: 20px 0;
+}
+.content-notice-noti > div > div:nth-child(2) h2 {
+  margin-right: 20px;
+}
+.content-notice-noti > div > div:nth-child(2) p {
+  line-height: 1.6;
+  font-size: 14px;
+}
+.content-notice-noti > div > div:nth-child(2) p span:first-child {
+  font-weight: 600;
+}
+.content-notice-noti > div > div:nth-child(2) p span:last-child {
+  color: var(--color-gray-222);
+}
+
+/* FAQ / 1:1 문의 / 대관단체문의 span */
+.content-notice-noti > div:nth-child(2) {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.content-notice-noti > div:nth-child(2) span {
+  padding: 8px 12px;
+  background-color: #ececec;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+.content-notice-noti > div:nth-child(2) span:last-child {
+  margin-right: 0;
+}
+
+/* 앱 다운로드 */
+.content-notice-noti + div {
+  padding: 30px;
+  text-align: center;
+}
+.content-notice-noti + div p {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.content-notice-noti + div img + p {
+  color: var(--color-gray-222);
+}
+/* 큐알코드 이미지 */
+.content-notice-noti + div img {
+  width: 60px;
+  height: 60px;
+  margin: 20px 0;
+}
+
+/* 홈헬스 이미지 */
+.content-notice-down + div img {
+  border-radius: 20px;
+}
+
+/* ****************************************
+
+*   title : Login form style
+*   author : hong@naver.com
+*   final date : 2024/10/28
+
+******************************************* */
+
+.login-form form {
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-login-font);
+  font-size: 14px;
+}
+.login-form ul {
+  border: 1px solid green;
+  width: 420px;
+}
+.login-form ul li {
+  padding: 5px;
+}
+.login-form ul li:first-child p {
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--color-login-font);
+}
+
+.login-form button,
+.login-form-input {
+  width: 283px;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.login-form button {
+  outline-color: var(--color-button);
+  outline-style: solid;
+  outline-width: 1px;
+}
+.login-form ul li:nth-child(5) {
+  width: 290px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 9px;
+}
+.login-form ul li:nth-child(5) a {
+  text-decoration: underline;
+  font-weight: 700;
+  color: var(--color-login-font);
+}
+.login-form ul li:nth-child(5) div:last-child > :nth-child(2) {
+  padding-right: 10px;
+}
+.login-form ul li:last-child button {
+  background-color: rgb(25, 205, 96);
+  outline-color: #fff;
+}
+
+/* 로그인, 패스워드 아이콘 */
+.login-form-input {
+  display: block;
+  border: 1px solid var(--color-silver);
+}
+.login-form-input input {
+  border: none;
+  border-left: 1px solid var(--color-silver);
+  margin-left: 5px;
+  outline: none;
+  padding-left: 5px;
+}
+.login-form-input span i {
+  color: #b1b1b1;
+}
+
+/* ****************************************
+
+*   title : join form style
+*   author : hong@naver.com
+*   final date : 2024/10/29
+
+******************************************* */
+.join-form form {
+  border: 1px solid green;
+  width: 500px;
+  margin: 0 auto;
+}
+.join-form ul {
+  padding: 40px;
+}
+.join-form ul li {
+  padding-top: 20px;
+}
+.join-form ul li div {
+  border: 1px solid var(--color-silver);
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 10px;
+}
+.join-form ul li:first-child > div,
+.join-form ul li:nth-child(6) > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* title 설정 */
+.join-form form ul li label {
+  font-size: 1em;
+  font-weight: 700;
+  color: var(--color-primary);
+  padding-right: 5px;
+}
+.join-form form ul li label + span {
+  font-size: 0.7em;
+  font-weight: 600;
+  color: gray;
+}
+
+/* 인풋 */
+.join-form form ul li input {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 7px 0;
+  padding-left: 10px;
+}
+/* id input */
+.join-form ul li:first-child > div {
+  padding: 5px;
+}
+.join-form ul li:first-child > div input {
+  width: 60%;
+  margin-right: 10px;
+}
+/* email input */
+.join-form ul li:nth-child(6) > div {
+  border: none;
+  padding: 0;
+}
+.join-form ul li:nth-child(6) > div input,
+.join-form ul li:nth-child(6) > div select {
+  border: 1px solid var(--color-silver);
+  border-radius: 7px;
+  padding: 10px;
+}
+.join-form ul li:nth-child(6) > div input {
+  width: 50%;
+  margin-right: 20px;
+  padding-left: 20px;
+}
+.join-form ul li:nth-child(6) > div select {
+  width: 50%;
+  margin-left: 20px;
+}
+
+/* 공통 버튼 */
+.join-form form ul li button {
+  padding: 8px 30px;
+  background-color: var(--color-button);
+  color: var(--color-white);
+  border: 1px solid var(--color-white);
+  border-radius: 7px;
+}
+/* 가입하기, 가입취소 버튼 */
+.join-form form ul li:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.join-form form ul li:last-child button {
+  margin-right: 10px;
+}
+.join-form form ul li:last-child button:last-child {
+  background-color: rgb(226, 226, 15);
+}
+
+/* ****************************************
+
+*   title : My CGV form style
+*   author : hong@naver.com
+*   final date : 2024/10/29
+
+******************************************* */
+.mycgv div {
+  display: flex;
+  justify-content: center;
+}
+.mycgv div span {
+  border: 1px solid tomato;
+  display: inline-block;
+  width: 220px;
+  padding: 30px;
+  text-align: center;
+  margin: 30px 20px;
+}
+.mycgv div span:hover {
+  background-color: var(--color-button);
+}
+
+/* ****************************************
+
+*   title : Support form style
+*   author : hong@naver.com
+*   final date : 2024/10/29
+
+******************************************* */
+
+.support-content {
+  border: 1px solid green;
+  width: 800px;
+  margin: 0 auto;
+}
+
+/* fonts */
+.support-content p,
+.support-content td {
+  color: var(--color-gray-222);
+  font-size: 14px;
+}
+
+/* input */
+.support-content > div select,
+.support-content > div input,
+.support-content > div button {
+  padding: 5px 10px;
+}
+.support-content > div select,
+.support-content > div input {
+  border: 1px solid var(--color-silver);
+  color: var(--color-gray-222);
+}
+.support-content > div input {
+  margin: 0 5px;
+}
+.support-content > p + div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px 0 10px;
+}
+.support-content > div button {
+  border: 1px solid var(--color-white);
+  background-color: var(--color-black);
+  color: var(--color-white);
+  outline: 1px solid var(--color-black);
+}
+
+/* 총 27건이 검색되었습니다 p태그 */
+.support-content nav + p {
+  padding: 30px 0 20px;
+}
+
+/* menu */
+.support-content nav {
+  border-bottom: 1px solid var(--color-gray-222);
+  width: 100%;
+}
+.support-content nav ul {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  margin-bottom: -1px;
+}
+.support-content nav ul li a {
+  display: inline-block;
+  text-align: center;
+  width: 110px;
+  border-right: 1px solid var(--color-white);
+  padding: 12px;
+  background-color: var(--color-gray-222);
+  font-size: 12px;
+  color: var(--color-white);
+}
+.support-content nav ul li:first-child a {
+  background-color: var(--color-button);
+}
+
+/* table */
+.support-content table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+.support-content table th,
+.support-content table td {
+  padding: 15px;
+}
+.support-content table td a:hover {
+  text-decoration: underline;
+  font-weight: 700;
+}
+.support-content table thead tr th:nth-child(3),
+.support-content table tbody tr td:nth-child(3) {
+  text-align: left;
+}
+.support-content table thead {
+  border-top: 1px solid var(--color-silver);
+  border-bottom: 1px solid var(--color-silver);
+  background-color: #f1f1f1;
+}
+.support-content table tbody {
+  border-bottom: 1px solid var(--color-silver);
+}
+.support-content table tfoot {
+  letter-spacing: 5px;
+  font-weight: 700;
+  font-size: 1em;
+}
+.support-content table tfoot span:first-child {
+  text-decoration: underline;
+  color: var(--color-button);
+}
+.support-content table tfoot span:last-child {
+  font-size: 12px;
+  letter-spacing: -3px;
+  border: 1px solid var(--color-silver);
+  padding: 7px 10px;
+  border-radius: 5px;
+}
