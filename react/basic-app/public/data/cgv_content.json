@@ -1,0 +1,105 @@
+{
+  "specialList": [
+    {
+      "text1": "SUITE CENEMA",
+      "text2": "#호텔 컨셉의 프리미엄관"
+    },
+    { "text1": "CINE & LIVINGROOM", "text2": "#신개념 소셜 상영관" },
+    {
+      "text1": "4DX",
+      "text2": "#모션시트 #오감체험"
+    },
+    { "text1": "CINE de CHEF", "text2": "#쉐프가 있는 영화관" }
+  ],
+
+  "packageList": [
+    {
+      "title": "패키지",
+      "list": [
+        {
+          "src": "/images/pakage.jpg",
+          "alt": "package img",
+          "text": "우리 패키지",
+          "price": "62,000원"
+        },
+
+        {
+          "src": "/images/pakage.jpg",
+          "alt": "package img",
+          "text": "우리 패키지",
+          "price": "62,000원"
+        },
+        {
+          "src": "/images/pakage.jpg",
+          "alt": "package img",
+          "text": "우리 패키지",
+          "price": "62,000원"
+        }
+      ]
+    },
+    {
+      "title": "영화관람권",
+      "list": [
+        {
+          "src": "/images/ticket.jpg",
+          "alt": "ticket img",
+          "text": "영화관람권",
+          "price": "62,000원"
+        },
+        {
+          "src": "/images/ticket.jpg",
+          "alt": "ticket img",
+          "text": "영화관람권",
+          "price": "62,000원"
+        },
+        {
+          "src": "/images/ticket.jpg",
+          "alt": "ticket img",
+          "text": "영화관람권",
+          "price": "62,000원"
+        }
+      ]
+    },
+    {
+      "title": "기프트카드",
+      "list": [
+        {
+          "src": "/images/giftcard.jpg",
+          "alt": "gift img",
+          "text": "기프트카드",
+          "price": "금액충전형"
+        },
+        {
+          "src": "/images/giftcard.jpg",
+          "alt": "gift img",
+          "text": "기프트카드",
+          "price": "금액충전형"
+        },
+        {
+          "src": "/images/giftcard.jpg",
+          "alt": "gift img",
+          "text": "기프트카드",
+          "price": "금액충전형"
+        }
+      ]
+    }
+  ],
+
+  "eventList": [
+    {
+      "src": "https://img.cgv.co.kr/WebApp/contents/eventV4/42820/17327600028470.jpg",
+      "title": "2025 CGV짱구는 못말려 캘린더 출시!",
+      "date": "2024.11.28~2024.12.31"
+    },
+    {
+      "src": "https://img.cgv.co.kr/WebApp/contents/eventV4/42847/17328651238010.jpg",
+      "title": "[CGV 일산] SCREENX 리뉴얼 오픈",
+      "date": "2024.12.01 ~ 2024.12.17"
+    },
+    {
+      "src": "/images/event1.jpg",
+      "title": "[콜렉터블 무비머니]Vol.1 맥스 달든",
+      "date": "2024.09.25~2024.10.31"
+    }
+  ]
+}
