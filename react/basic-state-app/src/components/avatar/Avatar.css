@@ -1,0 +1,33 @@
+.container ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+.container ul li {
+  text-align: center;
+  border: 1px solid gray;
+  width: 250px;
+  height: 300px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  position: relative;
+  padding: 30px;
+}
+
+.container img {
+  border-radius: 100%;
+  width: 170px;
+}
+.new {
+  background-color: coral;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

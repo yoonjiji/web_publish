@@ -1,0 +1,19 @@
+.container {
+  text-align: center;
+  border: 1px solid lightgray;
+  margin: auto;
+  width: 300px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.number {
+  font-size: 50px;
+}
+.total-number {
+  font-size: 55px;
+  font-weight: bold;
+}
+.button {
+  font-size: 20px;
+  margin: 20px 10px;
+}

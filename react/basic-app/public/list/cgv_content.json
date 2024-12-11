@@ -1,0 +1,98 @@
+{
+  "EventContentList": [
+    {
+      "src": "https://img.cgv.co.kr/WebApp/contents/eventV4/42820/17327600028470.jpg",
+      "title": "2025 CGV짱구는 못말려 캘린더 출시!",
+      "date": "2024.11.28~2024.12.31"
+    },
+    {
+      "src": "https://img.cgv.co.kr/WebApp/contents/eventV4/42847/17328651238010.jpg",
+      "title": " [CGV 일산] SCREENX 리뉴얼 오픈",
+      "date": "2024.12.01 ~ 2024.12.17"
+    },
+    {
+      "src": "https://img.cgv.co.kr/WebApp/contents/eventV4/42840/17328487873790.jpg",
+      "title": "홀리데이 한정 삼숙이 키링 출시!",
+      "date": "2024.11.29~2024.12.31"
+    }
+  ],
+
+  "SpecialList": [
+    { "name": "SUITE CENEMA", "tag": "#호텔 컨셉의 프리미엄관" },
+    { "name": "CINE & LIVINGROOM", "tag": "#신개념 소셜 상영관" },
+    { "name": "4DX", "tag": "#모션시트 #오감체험" },
+    { "name": "CINE de CHEF", "tag": "#쉐프가 있는 영화관" }
+  ],
+
+  "PackageList": [
+    {
+      "title": "패키지",
+      "list": [
+        {
+          "src": "https://img.cgv.co.kr/GiftStore/Product/Pc/List/17170520996180.jpg",
+          "alt": "package img",
+          "name": "우리 패키지",
+          "price": "62,000원"
+        },
+        {
+          "src": "https://img.cgv.co.kr/GiftStore/Product/Pc/List/17170520996180.jpg",
+          "alt": "package img",
+          "name": "우리 패키지",
+          "price": "62,000원"
+        },
+        {
+          "src": "https://img.cgv.co.kr/GiftStore/Product/Pc/List/17170520996180.jpg",
+          "alt": "package img",
+          "name": "우리 패키지",
+          "price": "62,000원"
+        }
+      ]
+    },
+    {
+      "title": "패키지",
+      "list": [
+        {
+          "src": "https://img.cgv.co.kr/GiftStore/Product/Pc/List/17170520996180.jpg",
+          "alt": "package img",
+          "name": "우리 패키지",
+          "price": "62,000원"
+        },
+        {
+          "src": "https://img.cgv.co.kr/GiftStore/Product/Pc/List/17170520996180.jpg",
+          "alt": "package img",
+          "name": "우리 패키지",
+          "price": "62,000원"
+        },
+        {
+          "src": "https://img.cgv.co.kr/GiftStore/Product/Pc/List/17170520996180.jpg",
+          "alt": "package img",
+          "name": "우리 패키지",
+          "price": "62,000원"
+        }
+      ]
+    },
+    {
+      "title": "패키지",
+      "list": [
+        {
+          "src": "https://img.cgv.co.kr/GiftStore/Product/Pc/List/17170520996180.jpg",
+          "alt": "package img",
+          "name": "우리 패키지",
+          "price": "62,000원"
+        },
+        {
+          "src": "https://img.cgv.co.kr/GiftStore/Product/Pc/List/17170520996180.jpg",
+          "alt": "package img",
+          "name": "우리 패키지",
+          "price": "62,000원"
+        },
+        {
+          "src": "https://img.cgv.co.kr/GiftStore/Product/Pc/List/17170520996180.jpg",
+          "alt": "package img",
+          "name": "우리 패키지",
+          "price": "62,000원"
+        }
+      ]
+    }
+  ]
+}
