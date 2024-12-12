@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import AppOlive from "./components/olive-young/AppOlive.jsx";
+import AppAladin2 from "./components/aladin2/AppAladin2.jsx";
 // import App from "./App";
 
 // import reportWebVitals from "./reportWebVitals";
@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   // StricMode는 미리 예행으로 한 번 실행 -> 실제로 실행
   <React.StrictMode>
-    <AppOlive />
+    <AppAladin2 />
   </React.StrictMode>
 );
 
