@@ -1,18 +1,30 @@
 import React, { useEffect, useState } from "react";
-import Book2 from "./Book2.jsx";
+import Book2 from "../aladin/Book.jsx";
 
 export default function BookList2() {
   const [books, setBooks] = useState([]);
-  const [type, setType] = useState("");
+  const [type, setType] = useState("total");
   useEffect(() => {
     fetch("/data/aladin.json")
       .then((data) => data.json())
-      .then((jsonData) => setBooks(jsonData.books))
+      .then((jsonData) => {
+        if (type === "total") {
+          setBooks(jsonData.books);
+        } else {
+          const filterBooks = jsonData.books.filter(
+            (book) => book.type === type
+          );
+          setBooks(filterBooks);
+        }
+      })
       .catch((error) => console.log(error));
-  }, []);
+  }, [type]);
+
+  // console.log(`books -->${books}`);
 
   const handleClick = (event) => {
-    console.log(event.target.value);
+    setType(event.target.value);
+    // console.log(event.target.value);
   };
 
   return (
@@ -36,11 +48,12 @@ export default function BookList2() {
         국외
       </div>
       <ul style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)" }}>
-        {books.map((book) => (
-          <li style={{ listStyle: "none" }}>
-            <Book2 img={book.img} title={book.title} />
-          </li>
-        ))}
+        {books &&
+          books.map((book) => (
+            <li style={{ listStyle: "none" }}>
+              <Book2 img={book.img} title={book.title} />
+            </li>
+          ))}
       </ul>
     </>
   );
