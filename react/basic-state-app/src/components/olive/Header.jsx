@@ -1,5 +1,10 @@
-import React from "react";
+import React from 'react';
 
-export default function Header({ children }) {
-  return <header>{children}</header>;
+export default function Header({children}) {
+    return (
+        <header>
+            {children}
+        </header>
+    );
 }
+

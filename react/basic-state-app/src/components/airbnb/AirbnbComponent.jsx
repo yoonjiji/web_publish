@@ -1,22 +1,19 @@
+
 export default function AirbnbComponent(props) {
-  return (
-    <div className="container">
-      <div className="content">
-        <div>
-          <img src={props.src} alt="img" />
-          {props.isGood && <span className="isgood">게스트 선호</span>}
-          <span className="isheart" style={{ color: props.color }}>
-            ♥
-          </span>
+    return (  
+        <div className="container">
+            <div className="img">
+                <img src={props.img} />
+                {props.isGood && <span className="isgood">게스트 선호</span>}
+                <span className="isheart" 
+                        style={{color:props.color}}>❤</span>
+            </div>
+            <div className="description">
+                <p className="d1">{props.d1}</p>
+                <p className="d2">{props.d2}</p>
+                <p className="d3">{props.d3}</p>
+                <p className="d4">{props.d4} /박</p>
+            </div>
         </div>
-        {/* <img src={src} alt="하트" /> */}
-        <p>{props.name}</p>
-        <p className="textGray">{props.view}</p>
-        <p className="textGray">{props.date}</p>
-        <p>
-          <span className="textBold">{props.price}</span> /박
-        </p>
-      </div>
-    </div>
-  );
+    );
 }

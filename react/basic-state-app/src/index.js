@@ -1,16 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import Signup from "./components/form2/Signup.jsx";
-// import App from "./App";
-
-// import reportWebVitals from "./reportWebVitals";
+// import AppForm from "./components/form/AppForm.jsx";
+import AppBestSeller from "./components/yes14/AppBestSeller.jsx";
+// import AppBestSeller from './components/yes24/AppBestSeller.jsx';
+// import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  // StricMode는 미리 예행으로 한 번 실행 -> 실제로 실행
   <React.StrictMode>
-    <Signup />
+    <AppBestSeller />
   </React.StrictMode>
 );
 

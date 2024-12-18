@@ -3,7 +3,7 @@ import Product from './Product';
 
 export default function ProductList({cart}) {
     const [productList, setProductList] = useState([]);  //전체 상품 리스트
-    const [list, setList] = useState([]);  //출력용 리스트
+    const [list, setList] = useState([]);   //화면 출력 리스트
 
     useEffect(()=>{
         fetch("/data/olive.json")
@@ -15,22 +15,22 @@ export default function ProductList({cart}) {
             .catch();
     }, []);  
 
+
     const totalCart = (id) => {
         cart(id);       //AppOlive의 handleCartApp 함수 호출
     }    
-
     const [type, setType] = useState('');
-
     const handleTypeChange = (event) => {
-        setType(event.target.value);      
+        setType(event.target.value);
     }
 
-    useEffect(()=> {
+    useEffect(()=>{
+        console.log(`type------------->> ${type}`);
         if(type === 'total') {
             setList(productList);
         } else {
-            const list = productList.filter((item) => {
-                if(type === 'sale' && item.isSale ) {
+            const filterList = productList.filter((item) => {
+                if(type === 'sale' && item.isSale) {
                     return item;
                 } else if(type === 'coupon' && item.isCoupon) {
                     return item;
@@ -38,18 +38,20 @@ export default function ProductList({cart}) {
                     return item;
                 }
             });
-            setList(list); 
-        }                   
-        
-    }, [type]);  //useEffect : type
+            console.log(filterList);
+            
+            setList(filterList);
+        }
+    }, [type]);
     
+
     return (
         <>
             <div>
-                <input type="radio" name="type" value="total" onClick={handleTypeChange}/>전체
-                <input type="radio" name="type" value="sale" onClick={handleTypeChange}/>세일
-                <input type="radio" name="type" value="coupon" onClick={handleTypeChange}/>쿠폰
-                <input type="radio" name="type" value="today" onClick={handleTypeChange}/>오늘드림
+                <input type="radio">전체</input>
+                <input type="radio">세일</input>
+                <input type="radio">쿠폰</input>
+                <input type="radio">오늘드림</input>
             </div>
             <ul className='product-list-container'>
                 {list && list.map(item => 

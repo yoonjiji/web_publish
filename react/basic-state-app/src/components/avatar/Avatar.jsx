@@ -1,9 +1,10 @@
-export default function Avatar(props) {
-  return (
-    <>
-      <img src={props.img} alt="img" />
-      <p>{props.name}</p>
-      {props.isNew && <span className="new">new</span>}
-    </>
-  );
+
+export default function Avatar({img, name, isNew}) {
+    return (
+        <div className="container">
+            <img src={img} />
+            <p>{name}</p>
+            {isNew && <span className="new">New</span>}
+        </div>
+    );
 }

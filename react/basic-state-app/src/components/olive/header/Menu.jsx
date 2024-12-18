@@ -1,18 +1,10 @@
-import React from "react";
+import React from 'react';
 
-export default function Menu({ name, count }) {
-  return (
-    <button type="button">
-      {name}
-      {name === "장바구니" ? <span>({count})</span> : ""}
-    </button>
-  );
-
-  // name === "장바구니" ? (
-  //   <button type="button">
-  //     {name}({count})
-  //   </button>
-  // ) : (
-  //   <button type="button">{name}</button>
-  // );
+export default function Menu({name, count}) {
+    return (        
+        <button type="button">{name}
+            {name === '장바구니' ? <span>({count})</span> : '' }
+        </button>
+    );
 }
+

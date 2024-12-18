@@ -6,6 +6,7 @@ import "./Menu.css";
 
 export default function AppBestSeller() {
   const [menuList, setMenuList] = useState([]);
+  const [originalBookList, setOriginalBookList] = useState([]); // 원본 데이터 상태
   const [bookList, setBookList] = useState([]);
   const [category, setCategory] = useState("total");
 
@@ -14,25 +15,25 @@ export default function AppBestSeller() {
       .then((data) => data.json())
       .then((jsonData) => {
         setMenuList(jsonData.menuList);
-        if (category === "total") {
-          setBookList(jsonData.bookList);
-        } else {
-          // category 값에 따라 필터링 처리 후 setBookList 저장
-          const filterArray = jsonData.bookList.filter(
-            (book) => book.category === category
-          );
-          setBookList(filterArray);
-
-          // [{book},{book}]
-        }
+        setOriginalBookList(jsonData.bookList); // 원본 데이터 저장
+        setBookList(jsonData.bookList); // 초기 책 목록 설정
       })
       .catch((error) => console.log(error));
-  }, [category]);
-  // 디펜던시에 값을 안 넣으면 한 번만, 값을 넣어주면 변경될 때마다 호출
+  }, []);
 
-  // AppBestSeller <-- MenuList <-- Menu
+  useEffect(() => {
+    if (category === "total") {
+      setBookList(originalBookList);
+    } else {
+      const filteredBooks = originalBookList.filter(
+        (book) => book.category === category
+      );
+      setBookList(filteredBooks);
+    }
+  }, [category, originalBookList]); // category 또는 originalBookList가 변경될 때 필터링 적용
+
   const handleMenuClickReq2 = (category) => {
-    console.log(`AppBestSeller -->${category}`);
+    console.log(`AppBestSeller --> ${category}`);
     setCategory(category);
   };
 

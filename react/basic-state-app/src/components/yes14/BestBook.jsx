@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import BestBookButton from "./BestBookButton.jsx";
-import BestBookAvatar from "./BestBookAvatar.jsx";
-import BestBookContent from "./BestBookContent.jsx";
+import React, { useEffect, useState } from "react";
+import BestBookContent from "./BestBookContent";
+import BestBookAvatar from "./BestBookAvatar";
+import BestBookButton from "./BestBookButton";
 
 export default function BestBook({ list }) {
   return (
@@ -12,7 +12,7 @@ export default function BestBook({ list }) {
             <BestBookAvatar rank={i + 1} img={book.img} />
             <BestBookContent
               suggest={book.suggest}
-              today={book.today}
+              today={book.suggest}
               type={book.type}
               title={book.title}
               author={book.author}
