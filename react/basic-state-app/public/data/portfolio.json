@@ -1,0 +1,219 @@
+{
+  "headerTopList": [
+    {
+      "href": "#home",
+      "name": "Home",
+      "isActive": "active"
+    },
+    {
+      "href": "#about",
+      "name": "About"
+    },
+    {
+      "href": "#skill",
+      "name": "Skills"
+    },
+    {
+      "href": "#work",
+      "name": "My work"
+    },
+    {
+      "href": "#testimonial",
+      "name": "Testimonial"
+    },
+    {
+      "href": "#contact",
+      "name": "Contact"
+    }
+  ],
+
+  "contentCommon": [
+    {
+      "title": "About me",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure natus, temporibus perspiciatis repudiandae nostrum modi doloremque expedita noneius ipsum! Beatae porro adipisci omnis architecto dignissimos. Iustoipsa inventore adipisci."
+    },
+    {
+      "title": "My Skills",
+      "description": "Skills & Attributes",
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure natus, temporibus perspiciatis repudiandae nostrum modi doloremque expedita noneius ipsum! Beatae porro adipisci omnis architecto dignissimos. Iustoipsa inventore adipisci."
+    },
+    {
+      "title": "My work",
+      "description": "Projects"
+    },
+    {
+      "title": "Testimonial",
+      "description": "See what they say about me"
+    }
+  ],
+
+  "AboutMagorsList": [
+    {
+      "icon": "fa-brands fa-html5 major__icon",
+      "title": "Front-end",
+      "text": "HTML, CSS, JavaScript, TypeScript, React, WebAPIs"
+    },
+    {
+      "icon": "fa-solid fa-mobile major__icon",
+      "title": "Mobile",
+      "text": "Android Studio, React Native, iOS, Swift, Java, Kotlin"
+    },
+    {
+      "icon": "fa-solid fa-server major__icon",
+      "title": "Back-end",
+      "text": "Java, JavaScript, Go, Kotlin, Spring, Spring Boot"
+    }
+  ],
+
+  "AboutJobList": [
+    {
+      "img": "/images/jobs/google.png",
+      "alt": "google",
+      "name": "Google as Junior Software Engineer",
+      "period": "2019 Oct - Until now"
+    },
+    {
+      "img": "/images/jobs/samsung.png",
+      "alt": "samsung",
+      "name": "Samsung as Junior Software Engineer",
+      "period": "2010 Oct - 2019 Oct"
+    },
+    {
+      "img": "/images/jobs/google.png",
+      "alt": "google",
+      "name": "Google as Junior Software Engineer",
+      "period": "2019 Oct - Until now"
+    },
+    {
+      "img": "/images/jobs/samsung.png",
+      "alt": "samsung",
+      "name": "Samsung as Junior Software Engineer",
+      "period": "2010 Oct - 2019 Oct"
+    }
+  ],
+
+  "codingSkillList": [
+    {
+      "name": "HTML",
+      "percent": "98%"
+    },
+    {
+      "name": "CSS",
+      "percent": "90%"
+    },
+    {
+      "name": "JavaScript",
+      "percent": "90%"
+    },
+    {
+      "name": "TypeScript",
+      "percent": "80%"
+    },
+    {
+      "name": "React",
+      "percent": "79%"
+    },
+    {
+      "name": "NodeJS",
+      "percent": "68%"
+    }
+  ],
+
+  "categorieList": [
+    {
+      "title": "All",
+      "count": "8",
+      "category": "total"
+    },
+    {
+      "title": "Front-end",
+      "count": "4",
+      "category": "front"
+    },
+    {
+      "title": "Back-end",
+      "count": "2",
+      "category": "back"
+    },
+    {
+      "title": "Mobile",
+      "count": "2",
+      "category": "mobile"
+    }
+  ],
+
+  "projectList": [
+    {
+      "img": "images/projects/project1.webp",
+      "alt": "project1",
+      "title": "Project #1",
+      "text": "Clone Coding with HTML, CSS"
+    },
+    {
+      "img": "images/projects/project2.webp",
+      "alt": "project2",
+      "title": "Project #2",
+      "text": "Clone Coding with HTML, CSS"
+    },
+    {
+      "img": "images/projects/project3.webp",
+      "alt": "project3",
+      "title": "Project #3",
+      "text": "Clone Coding with HTML, CSS"
+    },
+    {
+      "img": "images/projects/project4.webp",
+      "alt": "project4",
+      "title": "Project #4",
+      "text": "Clone Coding with HTML, CSS"
+    },
+    {
+      "img": "images/projects/project5.webp",
+      "alt": "project5",
+      "title": "Project #5",
+      "text": "Clone Coding with HTML, CSS"
+    },
+    {
+      "img": "images/projects/project6.webp",
+      "alt": "project6",
+      "title": "Project #6",
+      "text": "Clone Coding with HTML, CSS"
+    },
+    {
+      "img": "images/projects/project7.webp",
+      "alt": "project7",
+      "title": "Project #7",
+      "text": "Clone Coding with HTML, CSS"
+    },
+    {
+      "img": "images/projects/project8.webp",
+      "alt": "project8",
+      "title": "Project #8",
+      "text": "Clone Coding with HTML, CSS"
+    }
+  ],
+
+  "testimonialList": [
+    {
+      "img": "/images/testimonials/people1.webp",
+      "alt": "people1",
+      "name": "James Kim",
+      "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis similique, unde nam totam quam, nisi odio error amet provident iste modi eos dicta, eum suscipit rem illum inventore sapiente blanditiis?",
+      "company": "Google"
+    },
+    {
+      "img": "/images/testimonials/people2.webp",
+      "alt": "people2",
+      "name": "Smith Park",
+      "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis similique, unde nam totam quam, nisi odio error amet provident iste modi eos dicta, eum suscipit rem illum inventore sapiente blanditiis?",
+      "company": "Samsung"
+    },
+    {
+      "img": "/images/testimonials/people3.webp",
+      "alt": "people3",
+      "name": "Anna Jin",
+      "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis similique, unde nam totam quam, nisi odio error amet provident iste modi eos dicta, eum suscipit rem illum inventore sapiente blanditiis?",
+      "company": "Samsung"
+    }
+  ]
+}

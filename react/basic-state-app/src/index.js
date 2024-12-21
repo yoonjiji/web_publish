@@ -1,15 +1,13 @@
-import React from "react";
+import React, { Component } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-// import AppForm from "./components/form/AppForm.jsx";
-import AppBestSeller from "./components/yes14/AppBestSeller.jsx";
-// import AppBestSeller from './components/yes24/AppBestSeller.jsx';
-// import reportWebVitals from './reportWebVitals';
+import AppPortfolio from "./components/portfolio/AppPortfolio.jsx";
+// import AppOlive from "./components/olive/AppOlive.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <AppBestSeller />
+    <AppPortfolio />
   </React.StrictMode>
 );
 
