@@ -1,25 +1,23 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Categories from "./Categories.jsx";
 
-export default function CategorieList() {
-  const [list, setList] = useState([]);
-  useEffect(() => {
-    fetch("/data/portfolio.json")
-      .then((data) => data.json())
-      .then((jsonData) => {
-        if (jsonData.categorieList.category !== "total") {
-          setList(jsonData.categorieList);
-        }
-      })
-      .catch((error) => console.log(error));
-  }, []);
+export default function CategorieList({ list, click }) {
+  const handleMenuClickReq = (category) => {
+    console.log(`CategoryieList -->${category}`);
+    click(category);
+  };
 
   return (
     <ul class="categories ">
       {list &&
         list.map((item) => (
           <li>
-            <Categories title={item.title} count={item.count} />
+            <Categories
+              title={item.title}
+              // count={item.count}
+              category={item.category}
+              click={handleMenuClickReq}
+            />
           </li>
         ))}
     </ul>
