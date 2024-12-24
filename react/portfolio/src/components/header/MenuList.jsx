@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Menu from "./Menu.jsx";
-import Category from "../content/Category.jsx";
 
 export default function MenuList() {
+  const [selected, setSelected] = useState("Home");
   const list = [
     { href: "#home", name: "Home" },
     { href: "#about", name: "About" },
@@ -12,20 +12,27 @@ export default function MenuList() {
     { href: "#contact", name: "Contect" },
   ];
 
-  const [active, setActive] = useState("");
+  const handleClick = (menuName) => {
+    console.log("menuName---->>", menuName);
+    setSelected(menuName);
+  };
+  // console.log("selected--->", selected);
+
   return (
     <nav>
       <ul className="header__menu">
         {list &&
-          list.map((item, i) => (
+          list.map((item) => (
             <li>
               <Menu
                 href={item.href}
                 menuName={item.name}
-                isActive={i === active}
-                click={() => {
-                  setActive(i);
-                }}
+                click={handleClick}
+                style={
+                  item.name === selected
+                    ? "header__menu__item active"
+                    : "header__menu__item"
+                }
               />
             </li>
           ))}

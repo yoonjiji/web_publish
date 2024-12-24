@@ -1,15 +1,13 @@
 import React from "react";
 
-export default function Menu({ href, menuName, isActive, click }) {
-  const handleClickMenu = () => {
-    click();
-  };
-
+export default function Menu({ href, menuName, style, click }) {
   return (
     <a
-      class={`header__menu__item ${isActive ? "active" : ""}`}
+      class={style}
       href={href}
-      onClick={handleClickMenu}
+      onClick={() => {
+        click(menuName);
+      }}
     >
       {menuName}
     </a>
