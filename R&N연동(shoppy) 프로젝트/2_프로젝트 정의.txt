@@ -1,0 +1,14 @@
+1. web_pubilsh\shoppy 프로젝트(폴더) 생성
+    mkdir shoppy
+    cd shoppy
+
+2. react 프로젝트 생성 : client
+    npx create-react-app client
+    
+    cd client
+
+    cat package.json : "dependencies"에서 설치 확인
+    
+    npm i react-router-dom # react 라우터 돔 패키지 설치
+    npm i axios            # axios 패키지 설치
+    npm i react-icons      # react 제공 아이콘 패키지 설치
