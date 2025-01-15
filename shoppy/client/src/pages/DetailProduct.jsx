@@ -20,14 +20,15 @@ export default function DetailProduct({ addCart }) {
 
   // 장바구니 추가 이벤트
   const addCartItem = () => {
+    // alert("장바구니 추가!!");
     // console.log(product.pid, product.price, size, 1);
-    const cartItem = {
+    const CartItem = {
       pid: product.pid,
-      price: product.price,
       size: size,
       qty: 1,
+      price: product.price,
     };
-    addCart(cartItem);
+    addCart(CartItem);
   };
 
   //   console.log("size--->", size);
