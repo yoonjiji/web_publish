@@ -3,7 +3,6 @@
     "pid": "1",
     "image": "/images/1.webp",
     "name": "후드티",
-    "ename": "hoodie",
     "price": 15000,
     "info": "분홍색 후드티"
   },
@@ -11,7 +10,6 @@
     "pid": "2",
     "image": "/images/2.webp",
     "name": "후드티",
-    "ename": "hoodie",
     "price": 15000,
     "info": "검정색 후드티"
   },
@@ -19,7 +17,6 @@
     "pid": "3",
     "image": "/images/3.webp",
     "name": "원피스",
-    "ename": "one piece",
     "price": 25000,
     "info": "원피스"
   },
@@ -27,7 +24,6 @@
     "pid": "4",
     "image": "/images/4.webp",
     "name": "티셔츠",
-    "ename": "t-shirt",
     "price": 12000,
     "info": "티셔츠"
   },
@@ -35,7 +31,6 @@
     "pid": "5",
     "image": "/images/5.webp",
     "name": "티셔츠",
-    "ename": "t-shirt",
     "price": 20000,
     "info": "티셔츠"
   },
@@ -43,7 +38,6 @@
     "pid": "6",
     "image": "/images/6.webp",
     "name": "스트레치 비스트 드레스",
-    "ename": "stretch beast dress",
     "price": 55000,
     "info": "스트레치 비스트 드레스"
   },
@@ -51,7 +45,6 @@
     "pid": "7",
     "image": "/images/7.webp",
     "name": "자켓",
-    "ename": "jacket",
     "price": 115000,
     "info": "자켓"
   }
