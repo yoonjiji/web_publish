@@ -1,14 +1,20 @@
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { PiGiftThin } from "react-icons/pi";
 import axios from "axios";
-import Detail from "../components/detail-tap/Detail.jsx";
+import QnA from "../components/QnA/QnA.jsx";
+import DetailMenu from "../components/QnA/DetailMenu.jsx";
+import Review from "../components/review/Review.jsx";
+import Detail from "../components/detail/Detail.jsx";
+import Delivery from "../components/delivery/Delivery.jsx";
 
 export default function DetailProduct({ addCart }) {
   const { pid } = useParams();
   const [product, setProduct] = useState({});
   const [size, setSize] = useState("XS");
+  const [productImg, setProductImg] = useState({});
+
+  console.log("productImg-->", productImg);
 
   useEffect(() => {
     axios
@@ -99,25 +105,14 @@ export default function DetailProduct({ addCart }) {
         </ul>
       </div>
 
+      {/* DETAIL / REVIEW / Q&A / RETURN & DELIVERY  */}
       <div className="product-detail-tab">
-        {/* DETAIL / REVIEW / Q&A / RETURN & DELIVERY */}
-        <ul className="product-detail-tab-nav">
-          <li>
-            <label>DETAIL</label>
-          </li>
-          <li>
-            <label>REVIEW</label>
-          </li>
-          <li>
-            <label>Q&A</label>
-          </li>
-          <li>
-            <label>RETURN & DELIVERY</label>
-          </li>
-        </ul>
+        <DetailMenu />
         <div>
-          <h5>해당 탭의 내용 출력</h5>
-          <Detail selectedPid={pid} products={product} />
+          <Detail selectedPid={pid} product={product} />
+          <Review />
+          <QnA />
+          <Delivery />
         </div>
       </div>
     </div>

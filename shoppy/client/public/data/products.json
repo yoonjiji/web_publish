@@ -4,8 +4,8 @@
     "image": "/images/1.webp",
     "name": "후드티",
     "ename": "hoodie",
-    "price": 15000,
-    "info": "분홍색 후드티"
+    "price": 198000,
+    "info": "핑크 후드티"
   },
   {
     "pid": "2",
@@ -13,7 +13,9 @@
     "name": "후드티",
     "ename": "hoodie",
     "price": 15000,
-    "info": "검정색 후드티"
+    "info": "검정색 후드티",
+    "dcprice": "10500",
+    "dc": "30%"
   },
   {
     "pid": "3",
