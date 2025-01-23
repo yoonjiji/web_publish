@@ -7,21 +7,25 @@ import DetailMenu from "../components/QnA/DetailMenu.jsx";
 import Review from "../components/review/Review.jsx";
 import Detail from "../components/detail/Detail.jsx";
 import Delivery from "../components/delivery/Delivery.jsx";
+import ImageList from "../components/common/ImageList.jsx";
 
 export default function DetailProduct({ addCart }) {
   const { pid } = useParams();
   const [product, setProduct] = useState({});
   const [size, setSize] = useState("XS");
-  const [productImg, setProductImg] = useState({});
-
-  console.log("productImg-->", productImg);
+  const [imgList, setImgList] = useState([]);
+  // const [tabName, setTabName] = useState({});
+  const [activeTab, setActiveTab] = useState("detail");
 
   useEffect(() => {
     axios
       .get("/data/products.json") // http://localhost:3000/data/products.json
       .then((res) => {
         res.data.filter((product) => {
-          if (product.pid === pid) setProduct(product);
+          if (product.pid === pid) {
+            setProduct(product);
+            setImgList(product.imgList);
+          }
         });
       })
       .catch((error) => console.log(error));
@@ -48,13 +52,7 @@ export default function DetailProduct({ addCart }) {
           <img src={product.image} />
           <ul className="product-detail-image-top-list">
             <li>
-              <img src={product.image} alt="" />
-            </li>
-            <li>
-              <img src={product.image} alt="" />
-            </li>
-            <li>
-              <img src={product.image} alt="" />
+              <ImageList imgList={imgList.slice(1, 4)} />
             </li>
           </ul>
         </div>
@@ -106,14 +104,14 @@ export default function DetailProduct({ addCart }) {
       </div>
 
       {/* DETAIL / REVIEW / Q&A / RETURN & DELIVERY  */}
-      <div className="product-detail-tab">
-        <DetailMenu />
-        <div>
-          <Detail selectedPid={pid} product={product} />
-          <Review />
-          <QnA />
-          <Delivery />
-        </div>
+      <DetailMenu activeTab={activeTab} setActiveTab={setActiveTab} />
+      <div>
+        {activeTab === "detail" && (
+          <Detail selectedPid={pid} product={product} imgList={imgList} />
+        )}
+        {activeTab === "review" && <Review />}
+        {activeTab === "qna" && <QnA />}
+        {activeTab === "delivery" && <Delivery />}
       </div>
     </div>
   );
