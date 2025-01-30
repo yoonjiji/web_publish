@@ -4,9 +4,9 @@ import ReviewList from "./ReviewList.jsx";
 
 export default function Review() {
   return (
-    <>
+    <div>
       <ReviewTop />
       <ReviewList />
-    </>
+    </div>
   );
 }
