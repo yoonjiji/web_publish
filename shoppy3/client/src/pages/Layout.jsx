@@ -1,14 +1,15 @@
-import React from "react";
-import Header from "../components/Header.jsx";
-import { Outlet } from "react-router-dom";
-import Footer from "../components/Footer.jsx";
+import React from 'react';
+import { Outlet } from 'react-router-dom';
+import Header from '../components/Header.jsx';
+import Footer from '../components/Footer.jsx';
 
-export default function Layout() {
-  return (
-    <div>
-      <Header />
-      <Outlet />
-      <Footer />
-    </div>
-  );
+export default function Layout({cartCount}) {
+    return (
+        <div>
+            <Header cartCount = {cartCount} />
+            <Outlet />
+            <Footer />
+        </div>
+    );
 }
+

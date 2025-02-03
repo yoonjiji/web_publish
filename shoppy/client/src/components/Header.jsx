@@ -12,12 +12,15 @@ export default function Header({ cartCount }) {
         </Link>
         <nav className="header-right">
           <Link to="/all">Products</Link>
-          <Link to="/cart">MyCart({cartCount})</Link>
+          <Link to="/cart">Mycart({cartCount})</Link>
           <Link to="/login">
             <button type="button">Login</button>
           </Link>
           <Link to="/signup">
             <button type="button">Signup</button>
+          </Link>
+          <Link to="/employees">
+            <button type="button">Employees</button>
           </Link>
         </nav>
       </div>

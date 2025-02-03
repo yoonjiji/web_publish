@@ -2,34 +2,22 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { PiGiftThin } from "react-icons/pi";
 import axios from "axios";
-import QnA from "../components/QnA/QnA.jsx";
-import DetailMenu from "../components/QnA/DetailMenu.jsx";
-import Review from "../components/review/Review.jsx";
-import Detail from "../components/detail/Detail.jsx";
-import Delivery from "../components/delivery/Delivery.jsx";
-import ImageList from "../components/common/ImageList.jsx";
+import QnA from "../components/QnA/QnA";
+import DetailMenu from "../components/QnA/DetailMenu";
+import Review from "../components/review/Review";
+import Detail from "../components/detail/Detail";
+import Delivery from "../components/delivery/Delivery";
+import useQnA, { useProduct, useReview } from "../hooks/listCount";
+import ImageList from "../components/common/ImageList";
 
 export default function DetailProduct({ addCart }) {
   const { pid } = useParams();
-  const [product, setProduct] = useState({});
   const [size, setSize] = useState("XS");
-  const [imgList, setImgList] = useState([]);
-  // const [tabName, setTabName] = useState({});
-  const [activeTab, setActiveTab] = useState("detail");
-
-  useEffect(() => {
-    axios
-      .get("/data/products.json") // http://localhost:3000/data/products.json
-      .then((res) => {
-        res.data.filter((product) => {
-          if (product.pid === pid) {
-            setProduct(product);
-            setImgList(product.imgList);
-          }
-        });
-      })
-      .catch((error) => console.log(error));
-  }, []);
+  // tab state 추가
+  const [activeTab, setActiveTab] = useState('detail');
+  const { qnaList, qnaCount } = useQnA(pid);
+  const {reviewList, reviewCount} = useReview(pid);
+  const {detailDesList,detailInfoList,product,imgList} = useProduct(pid);
 
   //장바구니 추가 버튼 이벤트
   const addCartItem = () => {
@@ -104,14 +92,15 @@ export default function DetailProduct({ addCart }) {
       </div>
 
       {/* DETAIL / REVIEW / Q&A / RETURN & DELIVERY  */}
-      <DetailMenu activeTab={activeTab} setActiveTab={setActiveTab} />
-      <div>
-        {activeTab === "detail" && (
-          <Detail selectedPid={pid} product={product} imgList={imgList} />
-        )}
-        {activeTab === "review" && <Review />}
-        {activeTab === "qna" && <QnA />}
-        {activeTab === "delivery" && <Delivery />}
+      <div className="product-detail-tab">
+        <DetailMenu activeTab={activeTab} setActiveTab={setActiveTab} qnaCount={qnaCount} reviewCount={reviewCount}/>
+        <div>
+          {activeTab === 'detail' && <Detail selectedPid={pid} product={product} imgList={imgList} detailDesList={detailDesList} detailInfoList={detailInfoList} />}
+          {activeTab === 'review' && <Review reviewList={reviewList} reviewCount={reviewCount}/>}
+          {activeTab === 'qna' && <QnA qnaList={qnaList} />}
+          {activeTab === 'delivery' && <Delivery />}
+        </div>
+
       </div>
     </div>
   );
