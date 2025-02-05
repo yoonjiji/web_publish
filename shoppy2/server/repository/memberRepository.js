@@ -1,6 +1,19 @@
 import { db } from "./db.js";
 
 /**
+ *  로그인 - checkLogin
+ */
+export const checkLogin = async ({ id, pwd }) => {
+  // {id:'test', pwd:1234}
+  const sql = `
+select count(*) as result_rows from shoppy_member
+	where id = ? and pwd = ?;
+  `;
+  const [result] = await db.execute(sql, [id, pwd]); // 2차원 배열로 나오기때문에 요렇게
+  return result[0]; // [{result_rows : 1}]
+};
+
+/**
  *  아이디 중복 체크 - select
  */
 export const getIdCheck = async ({ id }) => {

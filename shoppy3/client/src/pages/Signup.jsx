@@ -1,4 +1,6 @@
+import axios from "axios";
 import React, { useState, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import "../styles/signup.css";
 import {
   validateSignup,
@@ -6,13 +8,13 @@ import {
   handlePasswordCheck,
 } from "../utils/funcValidate.js";
 import { initSignup, useInitSignupRefs } from "../utils/funcInitialize.js";
-import axios from "axios";
 
 export default function Signup() {
   const { names, placeholders, labels, initFormData } = initSignup();
   const { refs, msgRefs } = useInitSignupRefs(names);
   const [formData, setFormData] = useState(initFormData);
   const [idCheckResult, setIdCheckResult] = useState("default");
+  const navigate = useNavigate();
 
   const handleChangeForm = (e) => {
     const { name, value } = e.target;
@@ -31,7 +33,15 @@ export default function Signup() {
         // 회원가입 폼을 제출하면 DB에 insert
         axios
           .post("http://localhost:9000/member/signup", formData)
-          .then((res) => console.log(res.data))
+          // .then((res) => console.log(res.data))
+          .then((res) => {
+            if (res.data.result_rows === 1) {
+              alert("회원가입에 성공하셨습니다.");
+              navigate("/login");
+            } else {
+              alert("회원가입에 실패하셨습니다.");
+            }
+          })
           .catch((error) => console.log(error));
       }
     }
