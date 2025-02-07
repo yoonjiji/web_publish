@@ -7,6 +7,7 @@ import Products from "./pages/Products.jsx";
 import Carts from "./pages/Carts.jsx";
 import Login from "./pages/Login.jsx";
 import Signup from "./pages/Signup.jsx";
+import NewProduct from "./pages/NewProduct.jsx";
 import DetailProduct from "./pages/DetailProduct.jsx";
 import { AuthProvider } from "./auth/AuthContext.js";
 
@@ -39,6 +40,7 @@ export default function App() {
                 path="/products/:pid"
                 element={<DetailProduct addCart={addCart} />}
               />
+              <Route path="/products/new" element={<NewProduct />} />
             </Route>
           </Routes>
         </BrowserRouter>

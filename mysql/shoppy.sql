@@ -20,7 +20,6 @@ create table shoppy_member(
 	address			varchar(80),
 	mdate			datetime		
 );
-
 desc shoppy_member;
 select * from shoppy_member;
 
@@ -29,3 +28,32 @@ select count(id) as result from shoppy_member where id = 'test1';
 -- {result: 0}
 
 TRUNCATE TABLE shoppy_member;
+
+-- login
+select count(*) as result_rows from shoppy_member
+	where id = 'test3' and pwd = '3333';
+    
+-- shoppy_product
+create table shoppy_product (
+	pid				int	 			primary key		auto_increment,
+	pname 			varchar(50)		not null,
+	price			int, 
+	description 	varchar(200), 
+	upload_file		varchar(100),
+	source_file		varchar(100),
+	pdate			datetime
+);
+    
+desc shoppy_product;
+select * from shoppy_product;
+
+                select pid, 
+                       pname as name,
+                       price,
+                       description as info,
+                       concat('http://localhost:9000/', upload_file) as image,
+                       source_file,
+                       pdate
+                from shoppy_product;
+
+drop TABLE shoppy_product;

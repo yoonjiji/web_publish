@@ -1,5 +1,14 @@
 import { db } from "../repository/db.js";
 
+export const checkLogin = async ({ id, pwd }) => {
+  const sql = `
+              select count(*) as result_rows from shoppy_member
+                where id =? and pwd = ?;
+              `;
+  const [result] = await db.execute(sql, [id, pwd]);
+  return result[0];
+};
+
 export const registerMember = async (formData) => {
   const sql = `
           insert into shoppy_member(id, pwd, name, phone, emailname, emaildomain,

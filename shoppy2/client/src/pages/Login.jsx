@@ -6,6 +6,7 @@ import { FaLock } from "react-icons/fa";
 import { validateLogin } from "../utils/funcValidate.js";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../auth/AuthContext.js";
+import ImageUpload from "../components/ImageUpload.jsx";
 
 export default function Login() {
   const { isLoggedIn, setIsLoggedIn } = useContext(AuthContext);

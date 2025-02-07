@@ -36,12 +36,18 @@ export default function Header({ cartCount }) {
         <nav className="header-right">
           <Link to="/all">Products</Link>
           <Link to="/cart">MyCart({cartCount})</Link>
-          <Link to="/signup">
-            <button type="button">Signup</button>
-          </Link>
           <button type="button" onClick={handleLoginToggle}>
             {isLoggedIn ? "Logout" : "Login"}
           </button>
+          <Link to="/signup">
+            <button type="button">Signup</button>
+          </Link>
+          {isLoggedIn && (
+            <Link to="/products/new">
+              <button type="button">New Product</button>
+            </Link>
+          )}
+
           {/* <Link to="/login">
             <button type="button">Login</button>
           </Link> */}
