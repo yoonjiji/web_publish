@@ -18,3 +18,23 @@ export const getList = async (req, res) => {
   res.json(result);
   res.end();
 };
+
+/**
+ * 상품 상세 정보 조회
+ */
+export const getProduct = async (req, res) => {
+  console.log("req.body--->", req.body);
+  const result = await repository.getProduct(req.body.pid); // req.body => {"pid": pid} / req.body.pid => 3 객체가 아닌 변수로 넘어감
+  res.json(result);
+  res.end();
+};
+
+/**
+ *  장바구니 상품 정보 조회
+ */
+export const getCartItems = async (req, res) => {
+  console.log("pids--->", req.body);
+  const result = await repository.getCartItems(req.body);
+  res.json(result);
+  res.end();
+};
