@@ -16,6 +16,7 @@ export default function Header({ cartCount }) {
       const select = window.confirm("정말로 로그아웃 하시겠습니까?");
       if (select) {
         localStorage.removeItem("token");
+        localStorage.removeItem("user_id");
         setIsLoggedIn(false);
         // alert("로그아웃 되었습니다.");
         // console.log("select--->", select);
