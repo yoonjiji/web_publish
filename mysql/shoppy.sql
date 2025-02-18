@@ -187,3 +187,18 @@ select sc.cid,
 			  shoppy_member sm,
               shoppy_product sp
 		 where sc.id = sm.id and sc.pid = sp.pid;
+         
+
+--
+use hrdb2019;
+select * from shoppy_cart;
+truncate table shoppy_cart;
+
+select count(*) as count from shoppy_cart
+where id = 'test1';
+-- [ [{count : 2}] [count 빌드 정보] ]
+
+select * from shoppy_cart;
+
+select * from shoppy_cart
+	where id = 'test' and pid=3 and size='XS';
