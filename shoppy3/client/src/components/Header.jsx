@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { FiShoppingBag } from "react-icons/fi";
 import { AuthContext } from "../auth/AuthContext.js";
 import { CartContext } from "../context/CartContext.js";
+import axios from "axios";
 
 export default function Header() {
   const { isLoggedIn, setIsLoggedIn } = useContext(AuthContext);
@@ -13,6 +14,10 @@ export default function Header() {
   useEffect(() => {
     if (isLoggedIn) {
       const id = localStorage.getItem("user_id");
+      // axios
+      //   .post("http://localhost:9000/cart/add", { id: id })
+      //   .then((res) => console.log("res.data==>", res.data))
+      //   .catch((error) => console.log(error));
     } else {
       setCartCount(0);
     }
