@@ -4,6 +4,7 @@ import { useOrder } from "../hooks/useOrder.js";
 import { AuthContext } from "../auth/AuthContext.js";
 import { OrderContext } from "../context/OrderContext.js";
 import { CartContext } from "../context/CartContext.js";
+import axios from "axios";
 
 import "../styles/cart.css";
 import "../styles/checkoutinfo.css";
@@ -26,6 +27,27 @@ export default function CheckoutInfo() {
   const handleToggle = () => {
     /** 주소 검색 버튼 */
     setIsOpen(!isOpen);
+  };
+
+  /** 결제 함수 - 카카오페이 QR 결제 연동 */
+  const handlePayment = async () => {
+    const id = localStorage.getItem("user_id");
+    // 프로미스(then, catch)로 에러 발생시 catch로 잡음
+    // 프로미스 아니고 지금 같은 경우는 try, catch
+    try {
+      const res = await axios.post("http://localhost:9000/payment/qr", {
+        id: id,
+        item_name: "테스트 상품",
+        total_amount: 1000,
+      });
+      // console.log(res.data);
+      if (res.data.next_redirect_pc_url) {
+        window.location.href = res.data.next_redirect_pc_url;
+        localStorage.setItem("tid", res.data.tid);
+      }
+    } catch (error) {
+      console.log("카카오페이 QR 결제 시 에러 발생", error);
+    }
   };
 
   //---- DaumPostcode 관련 디자인 및 이벤트 시작 ----//
@@ -232,7 +254,9 @@ export default function CheckoutInfo() {
         <label for="privacy">개인정보 국외 이전 동의</label>
       </div>
 
-      <button className="pay-button">결제하기</button>
+      <button className="pay-button" onClick={handlePayment}>
+        결제하기
+      </button>
     </div>
   );
 }

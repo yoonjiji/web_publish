@@ -27,7 +27,31 @@ export function useOrder() {
     setOrderList(result.data);
     setMember(result.data[0]);
     calculateTotalPrice(result.data);
+
+    return result.data;
   };
 
-  return { getOrderList };
+  const saveToOrder = async (orderList, totalPrice, tid, type) => {
+    // getOrderList();
+    console.log("saveToOrder orderList-->", orderList);
+    console.log("saveToOrder orderPrice-->", totalPrice);
+    const id = localStorage.getItem("user_id");
+    const formData = {
+      id: id,
+      tid: tid,
+      type: type,
+      totalPrice: totalPrice,
+      orderList: orderList,
+    };
+
+    const result = await axios.post(
+      "http://localhost:9000/order/add",
+      formData
+    );
+    console.log("order add : list-->", result.data);
+    // setOrderList(result.data);
+    // setMember(result.data[0]);
+  };
+
+  return { getOrderList, saveToOrder };
 }

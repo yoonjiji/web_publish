@@ -273,4 +273,29 @@ select  sc.cid,
 	where sc.id = sm.id and sc.pid = sp.pid;
     
     select * from view_cart_list where id = 'test1';
+    
+-- shoppy_order
+-- oid(pk), pid, id, odate, total_amount, tid, type, size, qty 등 ...
+use hrdb2019;
+show tables;
+
+create table shoppy_order(
+	oid		int				primary key		auto_increment,
+	size	varchar(10)		not null,
+	qty 	int				not null,
+    tprice	int				not null,
+	odate	date,
+    type 	varchar(30)		not null,
+    tid 	varchar(50)		not null,
+	id		varchar(30)		not null,
+	pid		int 			not null,
+	constraint fk_order_id_shoppy_member_id foreign key(id)
+					references shoppy_member(id),
+	constraint fk_order_pid_product_pid foreign key(pid)
+					references shoppy_product(pid)
+);
+desc shoppy_order;
+select * from shoppy_order;
+
+truncate table shoppy_order;
 		

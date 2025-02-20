@@ -11,6 +11,7 @@ import DetailProduct from "./pages/DetailProduct.jsx";
 import NewProduct from "./pages/NewProduct.jsx";
 // import CartsDB from "./pages/CartsDB.jsx";
 import CheckoutInfo from "./pages/CheckoutInfo.jsx";
+import PaymentSuccess from "./pages/PaymentSuccess.jsx";
 import { AuthProvider } from "./auth/AuthContext.js";
 import { CartProvider } from "./context/CartContext.js";
 import { OrderProvider } from "./context/OrderContext.js";
@@ -87,6 +88,7 @@ export default function App() {
                   <Route path="/products/new" element={<NewProduct />} />
                   {/* <Route path='/cartdb' element={<CartsDB />} /> */}
                   <Route path="/checkout" element={<CheckoutInfo />} />
+                  <Route path="/payment/seccess" element={<PaymentSuccess />} />
                 </Route>
               </Routes>
             </BrowserRouter>

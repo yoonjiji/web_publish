@@ -8,3 +8,12 @@ export const getOrderList = async (req, res) => {
   res.json(result);
   res.end();
 };
+
+/**
+ * 오더리스트 넣기 : add
+ */
+export const add = async (req, res) => {
+  const result = await repository.add(req.body);
+  res.json(result);
+  res.end();
+};
