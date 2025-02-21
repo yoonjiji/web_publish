@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========== 공통 스타일 ========== */
+* {
+  @apply box-border font-sans;
+}
+
+body {
+  @apply leading-relaxed text-name;
+}
+
+/* ========== 레이아웃 기본값 ========== */
+.header,
+.footer,
+.content {
+  @apply mx-auto;
+}
+
+/* 기본 마진/패딩 제거 */
+ul,
+li,
+p {
+  @apply p-0 m-0;
+}
+
+/* ========== 컴포넌트 스타일 ========== */
+.product-container {
+  @apply p-8;
+}
+
+.content-title {
+  @apply pb-4 text-5xl font-bold;
+}
+
+/* ========== Swiper PageNation 스타일 ========== */
+/* 기본 불릿 스타일 */
+/* w-[15px] h-[15px] */
+.custom-bullet {
+  @apply inline-block sm:w-[15px] sm:h-[15px] w-[6px] h-[6px] rounded-full transition-all duration-300 ease-in-out;
+  @layer bg-gray-600;
+}
+
+/* 활성화된 불릿 스타일 (길게) */
+/* w-[50px] h-[15px] */
+.swiper-pagination-bullet-active.custom-bullet {
+  @apply sm:w-[50px] sm:h-[15px] w-[24px] h-[6px] rounded-[10px] bg-orange-600 transition-all duration-300 ease-in-out;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+  transform: translateX(-50%);
+  left: 50%;
+  padding-left: 24px;
+}
